@@ -11,7 +11,7 @@ Página web para local de coctelería y eventos en vivo
 - Filtro por fecha
 - Filtro por género musical
 - Diseño responsive
-  ***Por añadir***
+- ***Más características por añadir***
 
 ## Colaboradores
 - Adrián Carrasco
