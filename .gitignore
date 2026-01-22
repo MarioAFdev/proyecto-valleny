@@ -10,4 +10,12 @@ node_modules/
 # Carpeta de compilación              
 dist/
 # Archivos temporales
-*.tmp             
+*.tmp
+# Archivos de configuración de IDEs
+build/
+
+#Editor
+.vscode/
+.idea/
+*.swp
+
