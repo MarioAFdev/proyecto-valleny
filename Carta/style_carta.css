@@ -1,0 +1,84 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 50px;
+}
+
+
+.logo {
+    color: white;
+    font-size: 30px;
+    font-family: Georgia, serif;
+}
+
+
+.right {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+
+.nav {
+    display: flex;
+    gap: 25px;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.btn-login {
+    background-color: #f2b705;
+    color: black;
+    padding: 8px 18px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.seccion-cocteles {
+    position: relative;
+    height: 320px;
+    background-image: url("../images/Imagen\ Fondo\ Titulo.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Capa oscura */
+.fondo-oscuro {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.55);
+}
+
+/* Contenido encima */
+.contenido {
+    position: relative;
+    color: white;
+    max-width: 900px;
+    padding: 20px;
+}
+
+/* Título */
+.titulo {
+    font-family: Georgia, serif;
+    font-size: 36px;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+/* Texto */
+.descripcion {
+    font-size: 14px;
+    line-height: 1.6;
+    opacity: 0.95;
+}
+
