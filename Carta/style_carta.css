@@ -1,3 +1,6 @@
+*{
+    font-family: "droidsans";
+}
 .header {
     display: flex;
     align-items: center;
@@ -9,7 +12,7 @@
 .logo {
     color: white;
     font-size: 30px;
-    font-family: Georgia, serif;
+    font-family: "valleny";
 }
 
 
@@ -62,7 +65,7 @@
 
 
 .titulo {
-    font-family: Georgia, serif;
+    font-family: "piazzola";
     font-size: 48px;
     margin-bottom: 15px;
     letter-spacing: 1px;
@@ -73,6 +76,7 @@
     font-size: 14px;
     line-height: 1.6;
     opacity: 0.95;
+    font-family: "piazzola";
 }
 
 .enlace {
@@ -81,7 +85,7 @@
 
 .titular {
     color: #FFF;
-    font-family: Piazzolla;
+    font-family: "piazzola";
     font-size: 40px;
     font-style: normal;
     font-weight: 700;
@@ -124,6 +128,7 @@
     font-size: 2rem;
     margin-bottom: 20px;
     text-transform: capitalize;
+    font-family: "piazzola";
 }
 
 .descripcion-coctel {
@@ -151,7 +156,7 @@
 
 
 .preguntas {
-    font-family: Piazzolla;
+    font-family: "piazzola";
     font-size: 2rem;
     font-weight: 700;
     text-transform: uppercase;
@@ -262,7 +267,7 @@
 
 
 
-.nombre-coctel {
+.coctel-fondo .nombre-coctel {
     font-size: 4rem;
     margin-bottom: 10px;
     font-weight: 700;
@@ -411,4 +416,97 @@
 
 .resaltado {
     margin-top: -30px;
+}
+
+
+
+
+
+:root {
+    --neon-pink: #EE62A9;
+    --text-white: #ffffff;
+}
+
+.cocteles-favoritos {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.carousel-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.carousel-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    gap: 20px;
+    padding-bottom: 30px;
+}
+
+.carousel-container::-webkit-scrollbar {
+    display: none;
+}
+
+.card {
+    flex: 0 0 100%;
+    scroll-snap-align: center;
+    display: flex;
+    align-items: center;
+    border: 2px solid var(--neon-pink);
+    border-radius: 20px;
+    padding: 30px;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.card-image img {
+    width: 400px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 1px solid var(--neon-pink);
+}
+
+.card-content {
+    padding-left: 30px;
+    color: var(--text-white);
+}
+
+.card-content h3 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    margin-top: -4rem;
+}
+
+.card-content p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    opacity: 0.9;
+}
+
+.dots {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+.dots a {
+    width: 12px;
+    height: 12px;
+    background-color: #555;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.dots a:hover,
+.dots a:focus {
+    background-color: var(--neon-pink);
+    transform: scale(1.2);
+    box-shadow: 0 0 8px var(--neon-pink);
 }
