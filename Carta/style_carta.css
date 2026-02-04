@@ -1,6 +1,7 @@
-*{
+* {
     font-family: "droidsans";
 }
+
 .header {
     display: flex;
     align-items: center;
@@ -167,11 +168,8 @@
 .botones-preguntas {
     display: flex;
     justify-content: center;
-
     gap: 20px;
-
     flex-wrap: wrap;
-
 }
 
 .boton {
