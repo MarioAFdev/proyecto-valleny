@@ -22,3 +22,12 @@
 body {
   background-color: #20042C;
 }
+@font-face {
+  font-family: "valleny";
+  src: url("../fonts/Valleny.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+body{
+  background-color: #20042C;
+}
