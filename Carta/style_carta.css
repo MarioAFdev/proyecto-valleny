@@ -213,6 +213,7 @@
     text-align: center;
     padding: 12px 50px;
     border: none;
+    cursor: pointer;
 }
 
 .contenedor-boton-enviar {
@@ -220,4 +221,194 @@
     justify-content: center;
     align-items: center;
     padding: 2rem;
+}
+
+
+
+
+
+.coctel-fondo {
+    position: relative;
+    background-image: url("../images/imagenes-carta/Blood\ and\ Sand\ 2.png");
+    background-size: cover;
+    background-position: center;
+    padding: 80px 10%;
+    height: 1190px;
+}
+
+
+.contenido-coctel {
+    color: #FFF;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+
+}
+
+.info-izquierda {
+    position: absolute;
+    top: 4rem;
+    left: 4rem;
+    width: 380px;
+}
+
+.info-derecha {
+    position: absolute;
+    top: 4rem;
+    right: -4rem;
+    width: 380px;
+}
+
+
+
+.nombre-coctel {
+    font-size: 4rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+    color: #FFF;
+    margin-left: 4rem;
+}
+
+.subtitulo {
+    margin-left: 4rem;
+    margin-bottom: 30px;
+    opacity: 0.9;
+    font-size: 2rem;
+    color: #FFF;
+}
+
+.info-izquierda ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.info-derecha h4 {
+    margin: 20px 0;
+}
+
+.info-derecha label {
+    display: block;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.btn-extra {
+    margin: 15px 0;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    background: #6a2ca0;
+    color: #fff;
+    cursor: pointer;
+}
+
+.boton-QR {
+    padding: 12px 24px;
+    border-radius: 25px;
+    border: none;
+    background: linear-gradient(90deg, #EE62A9 20%, #FFC700 100%);
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+.nota {
+    color: #FFF;
+    font-size: 0.9rem;
+    opacity: 0.85;
+}
+
+.accion-qr {
+    position: absolute;
+    bottom: 10rem;
+    left: 13rem;
+
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    z-index: 10;
+}
+
+
+
+
+
+.footer {
+    color: #fff;
+    padding: 60px 10% 40px;
+}
+
+.footer-top {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+    margin-bottom: 60px;
+    margin-left: 10%;
+}
+
+.footer-col h4 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-col ul li {
+    margin-bottom: 10px;
+}
+
+.footer-col a {
+    color: #fff;
+    text-decoration: none;
+    opacity: 0.9;
+}
+
+.footer-col a:hover {
+    opacity: 1;
+}
+
+.footer-bottom {
+    text-align: center;
+}
+
+.footer-logo {
+    font-family: "valleny";
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.footer-bottom p {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+.resaltado {
+    color: #EE62A9;
+}
+
+.footer-contacto .contact-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.footer-icon {
+    width: 20px;
+    margin-right: 15px;
+}
+
+.contact-text {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.resaltado {
+    margin-top: -30px;
 }
