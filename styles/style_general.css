@@ -4,6 +4,21 @@
   font-weight: normal;
   font-style: normal;
 }
-body{
+
+@font-face {
+  font-family: "droidsans";
+  src: url("../fonts/droid-sans/DroidSans.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "piazzola";
+  src: url("../fonts/Piazzolla/static/Piazzolla_24pt-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
   background-color: #20042C;
 }
