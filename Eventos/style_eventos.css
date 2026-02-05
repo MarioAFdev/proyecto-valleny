@@ -189,3 +189,127 @@ h2 {
 .event-assistants .icon {
     width: 16px
 }
+
+/* TODOS LOS EVENTOS */
+
+.todos-eventos {
+    padding: 36px 20px
+}
+
+.event-list {
+    display: flex;
+    flex-direction: column;
+    gap: 18px
+}
+
+.list-item {
+    display: flex;
+    gap: 18px;
+    align-items: flex-start
+}
+
+.thumb img {
+    width: 220px;
+    height: auto;
+    display: block;
+    border-radius: 4px
+}
+
+.description {
+    flex: 1
+}
+
+.description h3 {
+    margin: 0;
+    font-family: "piazzola";
+    font-size: 20px
+}
+
+.text {
+    line-height: 1.4
+}
+
+.load-more {
+    text-align: center;
+    margin-top: 18px
+}
+
+/* FOOTER */
+
+.footer {
+    color: #fff;
+    padding: 60px 10% 40px;
+    border-top: 1px solid #fff;
+}
+
+.footer-top {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+    margin-bottom: 60px;
+    margin-left: 10%;
+}
+
+.footer-col h4 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-col ul li {
+    margin-bottom: 10px;
+}
+
+.footer-col a {
+    color: #fff;
+    text-decoration: none;
+    opacity: 0.9;
+}
+
+.footer-col a:hover {
+    opacity: 1;
+}
+
+.footer-bottom {
+    text-align: center;
+}
+
+.footer-logo {
+    font-family: "valleny";
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.footer-bottom p {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+.resaltado {
+    color: #EE62A9;
+}
+
+.footer-contacto .contact-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.footer-icon {
+    width: 20px;
+    margin-right: 15px;
+}
+
+.contact-text {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.resaltado {
+    margin-top: -30px;
+}
