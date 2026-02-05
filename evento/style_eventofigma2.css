@@ -1,0 +1,718 @@
+@import url("./style_evento.css");
+
+/* Variables de color */
+:root {
+    --bg-primary: #20042c;
+    --color-white: #ffffff;
+    --color-accent-pink: #ee62a9;
+    --color-accent-yellow: #ffc700;
+    --color-muted: #737373;
+    --color-text: #fffffff2;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-primary);
+    color: var(--color-white);
+    font-family: "droidsans", sans-serif;
+    overflow-x: hidden;
+}
+
+/* Header */
+.header-main {
+    background-color: var(--bg-primary);
+    position: relative;
+}
+
+.navbar {
+    background-color: var(--bg-primary);
+    padding: 24px 0;
+    border-bottom: none;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 80px;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.navbar-logo {
+    font-family: "valleny", serif;
+    font-size: 68px;
+    font-weight: normal;
+    color: var(--color-white);
+    text-decoration: none;
+}
+
+.navbar-menu {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+}
+
+.nav-link {
+    color: var(--color-white);
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    font-size: 22px;
+    font-family: "droidsans", sans-serif;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.nav-link.active {
+    color: var(--color-accent-pink);
+}
+
+.nav-link:hover {
+    color: var(--color-accent-pink);
+}
+
+.btn-login {
+    background: linear-gradient(to right, var(--color-accent-pink) 20.192%, var(--color-accent-yellow) 100%);
+    color: black;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-size: 24px;
+    font-family: "droidsans", sans-serif;
+    cursor: pointer;
+    font-weight: bold;
+    transition: transform 0.2s;
+}
+
+.btn-login:hover {
+    transform: scale(1.05);
+}
+
+/* Sección Título */
+.evento-titulo {
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 355"><defs><linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:rgba(0,0,0,0.3);stop-opacity:1" /><stop offset="100%" style="stop-color:rgba(0,0,0,0.8);stop-opacity:1" /></linearGradient></defs><rect fill="url(%23grad)" width="1440" height="355"/></svg>');
+    background-position: center;
+    background-size: cover;
+    padding: 60px 80px;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.titulo-content {
+    display: flex;
+    flex-direction: column;
+    gap: 58px;
+}
+
+.back-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--color-white);
+    text-decoration: none;
+    font-size: 20px;
+    font-family: "droidsans", sans-serif;
+    width: fit-content;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.back-link:hover {
+    color: var(--color-accent-pink);
+}
+
+.back-link svg {
+    width: 10px;
+    height: auto;
+}
+
+.titulo-evento {
+    font-family: "piazzola", serif;
+    font-size: 48px;
+    font-weight: bold;
+    color: var(--color-white);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.titulo-info {
+    display: flex;
+    gap: 88px;
+    align-items: flex-start;
+}
+
+.info-block {
+    display: flex;
+    flex-direction: column;
+}
+
+.info-label {
+    font-family: "droidsans", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--color-white);
+}
+
+.info-value {
+    font-family: "piazzola", serif;
+    font-size: 36px;
+    font-weight: bold;
+    color: var(--color-white);
+    text-transform: uppercase;
+}
+
+.info-value-hora {
+    font-family: "piazzola", serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--color-white);
+    text-transform: uppercase;
+}
+
+.contador-interes {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.numero-interes {
+    font-family: "piazzola", serif;
+    font-size: 36px;
+    font-weight: bold;
+    color: var(--color-white);
+    text-transform: uppercase;
+}
+
+/* Sección Tickets */
+.tickets-section {
+    padding: 60px 177px;
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.section-title {
+    font-family: "piazzola", serif;
+    font-size: 40px;
+    font-weight: bold;
+    color: var(--color-white);
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.tickets-box {
+    background-color: #3a205c;
+    border-radius: 4px;
+    overflow: hidden;
+    padding: 0;
+    box-shadow: inset 14px 14px 14px 0px rgba(0, 0, 0, 0.25);
+}
+
+.ticket-option {
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 40px;
+    height: 64px;
+    align-items: center;
+    border-bottom: 1px solid var(--color-accent-pink);
+    font-family: "droidsans", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: var(--color-white);
+    text-align: center;
+}
+
+.ticket-option.early-bird {
+    color: var(--color-muted);
+}
+
+.ticket-option.first-release {
+    background: linear-gradient(90deg, rgba(58, 32, 92, 0.36) 0%, rgba(153, 9, 255, 0.36) 44.712%);
+}
+
+.ticket-option:last-child {
+    border-bottom: none;
+}
+
+.ticket-controls {
+    display: flex;
+    gap: 211px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.cantidad-selector {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    justify-content: center;
+}
+
+.quantity-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    border: 2px solid var(--color-accent-pink);
+    border-radius: 50%;
+    transition: background 0.2s;
+}
+
+.quantity-btn:hover {
+    background: rgba(238, 98, 169, 0.2);
+}
+
+.quantity-btn svg {
+    width: 24px;
+    height: 24px;
+}
+
+.quantity-display {
+    font-family: "droidsans", sans-serif;
+    font-weight: bold;
+    font-size: 48px;
+    color: var(--color-white);
+    min-width: 60px;
+    text-align: right;
+}
+
+.btn-comprar {
+    background: linear-gradient(to right, var(--color-accent-pink) 20.192%, var(--color-accent-yellow) 100%);
+    color: var(--color-white);
+    border: none;
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-size: 20px;
+    font-family: "droidsans", sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s;
+    width: 234px;
+    height: 49px;
+}
+
+.btn-comprar:hover {
+    transform: scale(1.05);
+}
+
+/* Sección Información */
+.info-section {
+    padding: 60px 177px;
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.info-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 491px;
+}
+
+.info-title {
+    font-family: "piazzola", serif;
+    font-size: 40px;
+    font-weight: bold;
+    color: var(--color-white);
+    text-transform: uppercase;
+}
+
+.compartir-box {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 10px;
+}
+
+.compartir-box p {
+    font-family: "droidsans", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: var(--color-white);
+}
+
+.social-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.social-btn:hover {
+    transform: scale(1.05);
+}
+
+.social-btn svg {
+    width: 100%;
+    height: 100%;
+}
+
+.info-content {
+    display: flex;
+    gap: 116px;
+    align-items: flex-start;
+}
+
+.genero-tag {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 71px;
+}
+
+.genero-label {
+    font-family: "droidsans", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: var(--color-white);
+}
+
+.badge-genero {
+    border: 2px solid var(--color-accent-pink);
+    border-radius: 25px;
+    padding: 8px 24px;
+    text-align: center;
+    font-family: "droidsans", sans-serif;
+    font-size: 22px;
+    color: var(--color-white);
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-body {
+    display: flex;
+    gap: 116px;
+    align-items: flex-start;
+}
+
+.info-text {
+    flex: 1;
+    max-width: 462px;
+}
+
+.info-text p {
+    font-family: "droidsans", sans-serif;
+    font-size: 20px;
+    color: var(--color-white);
+    line-height: 1.6;
+}
+
+.info-image {
+    flex: 1;
+    max-width: 385px;
+}
+
+.info-image img {
+    width: 100%;
+    height: 521px;
+    object-fit: cover;
+    border: 2px solid var(--color-accent-pink);
+}
+
+/* Sección Eventos Relacionados */
+.eventos-relacionados {
+    padding: 60px 100px;
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.eventos-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+    justify-items: center;
+}
+
+.evento-card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 286px;
+}
+
+.card-image {
+    width: 100%;
+    aspect-ratio: 492 / 665;
+    overflow: hidden;
+    border: 2px solid var(--color-accent-pink);
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-date {
+    font-family: "piazzola", serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--color-white);
+    text-transform: uppercase;
+}
+
+.card-header svg {
+    width: 15px;
+    height: 20px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.card-header svg:hover {
+    transform: scale(1.1);
+}
+
+.card-title {
+    font-family: "piazzola", serif;
+    font-size: 32px;
+    font-weight: bold;
+    color: var(--color-white);
+    text-transform: uppercase;
+}
+
+.card-likes {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.card-likes svg {
+    width: 17px;
+    height: 20px;
+}
+
+.card-likes span {
+    font-family: "droidsans", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: var(--color-white);
+}
+
+/* Footer */
+.footer {
+    background-color: var(--bg-primary);
+    border-top: 1px solid var(--color-white);
+    padding: 60px 0;
+    margin-top: 100px;
+}
+
+.footer-container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 80px;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    gap: 80px;
+    position: relative;
+}
+
+.footer-brand {
+    text-align: center;
+}
+
+.footer-brand h2 {
+    font-family: "valleny", serif;
+    font-size: 96px;
+    color: var(--color-white);
+    margin-bottom: 20px;
+}
+
+.footer-brand p {
+    font-family: "droidsans", sans-serif;
+    font-size: 20px;
+    color: var(--color-white);
+    line-height: 1.5;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer-column h3 {
+    font-family: "piazzola", serif;
+    font-size: 32px;
+    font-weight: bold;
+    color: var(--color-white);
+}
+
+.footer-column ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer-column a {
+    font-family: "droidsans", sans-serif;
+    font-size: 20px;
+    color: var(--color-white);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.footer-column a:hover {
+    color: var(--color-accent-pink);
+}
+
+.footer-contact {
+    position: absolute;
+    right: 80px;
+    top: 60px;
+}
+
+.footer-contact h3 {
+    margin-bottom: 20px;
+}
+
+.contact-item {
+    margin-bottom: 30px;
+}
+
+.contact-label {
+    font-family: "droidsans", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: var(--color-white);
+    margin-bottom: 5px;
+}
+
+.contact-value {
+    font-family: "piazzola", serif;
+    font-size: 20px;
+    color: var(--color-accent-pink);
+}
+
+.footer-socials {
+    position: absolute;
+    right: 80px;
+    bottom: 60px;
+    display: flex;
+    gap: 20px;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.social-link:hover {
+    transform: scale(1.1);
+}
+
+.social-link svg {
+    width: 100%;
+    height: 100%;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .navbar-container {
+        padding: 0 40px;
+    }
+    
+    .navbar-menu {
+        gap: 40px;
+    }
+    
+    .evento-titulo {
+        padding: 40px 40px;
+    }
+    
+    .tickets-section,
+    .info-section,
+    .eventos-relacionados {
+        padding: 40px;
+    }
+    
+    .eventos-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .footer-container {
+        padding: 0 40px;
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .footer-contact,
+    .footer-socials {
+        position: relative;
+        right: auto;
+        top: auto;
+        bottom: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar-menu {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .titulo-info {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .info-header {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .ticket-controls {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .info-body {
+        flex-direction: column;
+    }
+    
+    .eventos-grid {
+        grid-template-columns: 1fr;
+    }
+}

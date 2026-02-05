@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evento</title>
+    <link rel="stylesheet" href="style_evento.css">
+    <link rel="stylesheet" href="../styles/style_general.css">
+    <link rel="stylesheet" href="../styles/reset.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">Valleny</div>
+
+        <div class="right">
+            <nav class="nav">
+                <a href="#">Eventos</a>
+                <a href="#">Carta</a>
+                <a href="#">Blog</a>
+                <a href="#">Galería</a>
+                <a href="#">Contacto</a>
+            </nav>
+
+            <a href="#" class="btn-login">Iniciar Sesión</a>
+        </div>
+    </header>
+    <main>
+        <section class="evento-titulo">
+            <div class="titulo-content">
+                <a href="#" class="back-link">
+                    <svg width="10" height="17" viewBox="0 0 10 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 1L1 8.5L9 16" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <span>Eventos</span>
+                </a>
+                
+                <h1 class="titulo-evento">Jazz Nights</h1>
+                
+                <div class="titulo-info">
+                    <div class="info-block">
+                        <p class="info-label">Fecha</p>
+                        <p class="info-value">SAB, 28 OCT</p>
+                        <p class="info-value-hora">20:00 - 22:00</p>
+                    </div>
+                    
+                    <div class="info-block">
+                        <p class="info-label">Interesado</p>
+                        <div class="contador-interes">
+                            <span class="numero-interes">100</span>
+                            <svg width="24" height="32" viewBox="0 0 24 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2C12 2 3 9 3 16C3 21.5228 7.47715 26 12 26C16.5228 26 21 21.5228 21 16C21 9 12 2 12 2Z" fill="white" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="tickets-section">
+            <h2 class="section-title">TICKETS</h2>
+
+            <div class="tickets-box">
+                <div class="ticket-option early-bird">
+                    <span>EARLY BIRD</span>
+                    <span>10,95€</span>
+                </div>
+                <div class="ticket-option first-release">
+                    <span>FIRST RELEASE</span>
+                    <span>12,95€</span>
+                </div>
+                <div class="ticket-option">
+                    <span>SECOND RELEASE</span>
+                    <span>15,95€</span>
+                </div>
+                <div class="ticket-option">
+                    <span>GENERAL ADMISSION</span>
+                    <span>21,95€</span>
+                </div>
+            </div>
+
+            <div class="ticket-controls">
+                <div class="cantidad-selector">
+                    <button class="quantity-btn">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 12H4" stroke="white" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                    <span class="quantity-display">1</span>
+                    <button class="quantity-btn">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 4V20M4 12H20" stroke="white" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </div>
+                <button class="btn-comprar">Comprar entradas</button>
+            </div>
+        </section>
+        <!-- Sección Información Principal -->
+        <section class="info-section">
+            <div class="info-header">
+                <h2 class="info-title">JAZZ NIGHTS</h2>
+                <div class="compartir-box">
+                    <p>Compartir</p>
+                    <a href="#" class="social-btn twitter">
+                        <img src="" alt="twitter icon">
+                    </a>
+                    <a href="#" class="social-btn instagram">
+                        <img src="" alt="instagram icon">
+                    </a>
+                    <a href="#" class="social-btn facebook">
+                        <img src="" alt="facebook icon">
+                    </a>
+                </div>
+            </div>
+
+            <div class="info-content">
+                <div class="genero-tag">
+                    <p class="genero-label">Género</p>
+                    <div class="badge-genero">Jazz</div>
+                </div>
+
+                <div class="info-body">
+                    <div class="info-text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                    </div>
+
+                    <div class="info-image">
+                        <img src="" alt="Jazz Nights Cartel">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Eventos Relacionados -->
+        <section class="eventos-relacionados">
+            <h2 class="section-title">EVENTOS RELACIONADOS</h2>
+
+            <div class="eventos-grid">
+                <div class="evento-card">
+                    <div class="card-image">
+                        <img src="" alt="Jazz Nights">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-header">
+                            <p class="card-date">SAB, 28 OCT</p>
+                            <svg width="15" height="20" viewBox="0 0 15 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M7.5 18C3.5 15 1 12 1 9C1 5.686 3.686 3 7 3C10.314 3 13 5.686 13 9C13 12 10.5 15 7.5 18Z"
+                                    fill="white" stroke="white" stroke-width="1" />
+                            </svg>
+                        </div>
+                        <h3 class="card-title">Jazz Nights</h3>
+                        <div class="card-likes">
+                            <svg width="17" height="20" viewBox="0 0 17 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M8.5 18C8.1 17.5 1 11 1 7C1 4.2 3.2 2 6 2C7.5 2 9 3 8.5 5C8 3 9.5 2 11 2C13.8 2 16 4.2 16 7C16 11 9 17.5 8.5 18Z"
+                                    fill="white" />
+                            </svg>
+                            <span>100</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="evento-card">
+                    <div class="card-image">
+                        <img src="https://via.placeholder.com/286x365" alt="Jazz Nights">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-header">
+                            <p class="card-date">SAB, 28 OCT</p>
+                            <svg width="15" height="20" viewBox="0 0 15 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M7.5 18C3.5 15 1 12 1 9C1 5.686 3.686 3 7 3C10.314 3 13 5.686 13 9C13 12 10.5 15 7.5 18Z"
+                                    fill="none" stroke="white" stroke-width="1" />
+                            </svg>
+                        </div>
+                        <h3 class="card-title">Jazz Nights</h3>
+                        <div class="card-likes">
+                            <svg width="17" height="20" viewBox="0 0 17 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M8.5 18C8.1 17.5 1 11 1 7C1 4.2 3.2 2 6 2C7.5 2 9 3 8.5 5C8 3 9.5 2 11 2C13.8 2 16 4.2 16 7C16 11 9 17.5 8.5 18Z"
+                                    fill="white" />
+                            </svg>
+                            <span>100</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="evento-card">
+                    <div class="card-image">
+                        <img src="https://via.placeholder.com/286x365" alt="Jazz Nights">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-header">
+                            <p class="card-date">SAB, 28 OCT</p>
+                            <svg width="15" height="20" viewBox="0 0 15 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M7.5 18C3.5 15 1 12 1 9C1 5.686 3.686 3 7 3C10.314 3 13 5.686 13 9C13 12 10.5 15 7.5 18Z"
+                                    fill="white" stroke="white" stroke-width="1" />
+                            </svg>
+                        </div>
+                        <h3 class="card-title">Jazz Nights</h3>
+                        <div class="card-likes">
+                            <svg width="17" height="20" viewBox="0 0 17 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M8.5 18C8.1 17.5 1 11 1 7C1 4.2 3.2 2 6 2C7.5 2 9 3 8.5 5C8 3 9.5 2 11 2C13.8 2 16 4.2 16 7C16 11 9 17.5 8.5 18Z"
+                                    fill="white" />
+                            </svg>
+                            <span>100</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="evento-card">
+                    <div class="card-image">
+                        <img src="https://via.placeholder.com/286x365" alt="Jazz Nights">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-header">
+                            <p class="card-date">SAB, 28 OCT</p>
+                            <svg width="15" height="20" viewBox="0 0 15 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M7.5 18C3.5 15 1 12 1 9C1 5.686 3.686 3 7 3C10.314 3 13 5.686 13 9C13 12 10.5 15 7.5 18Z"
+                                    fill="white" stroke="white" stroke-width="1" />
+                            </svg>
+                        </div>
+                        <h3 class="card-title">Jazz Nights</h3>
+                        <div class="card-likes">
+                            <svg width="17" height="20" viewBox="0 0 17 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M8.5 18C8.1 17.5 1 11 1 7C1 4.2 3.2 2 6 2C7.5 2 9 3 8.5 5C8 3 9.5 2 11 2C13.8 2 16 4.2 16 7C16 11 9 17.5 8.5 18Z"
+                                    fill="white" />
+                            </svg>
+                            <span>100</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+
+        <div class="footer-top">
+
+            <div class="footer-col">
+                <h4>Nuestros Servicios</h4>
+                <ul>
+                    <li><a href="#">Eventos</a></li>
+                    <li><a href="#">Carta</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Galería</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Noticias de Interés</h4>
+                <ul>
+                    <li><a href="#">Últimas Noticias</a></li>
+                    <li><a href="#">Todo sobre nuestros eventos</a></li>
+                    <li><a href="#">Todo sobre cócteles</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col footer-contacto">
+
+                <div class="contact-item">
+                    <img src="../images/imagenes-carta/Iconos footer/tel.png" alt="Teléfono" class="footer-icon">
+                    <div class="contact-text">
+                        <strong>Llámanos</strong><br>
+                        <span class="resaltado">600 000 000</span>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <img src="../images/imagenes-carta/Iconos footer/correo.png" alt="Email" class="footer-icon">
+                    <div class="contact-text">
+                        <strong>Email</strong><br>
+                        <span class="resaltado">vallenycontacto@gmail.com</span>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <img src="../images/imagenes-carta/Iconos footer/direccion.png" alt="Dirección" class="footer-icon">
+                    <div class="contact-text">
+                        <strong>Dirección</strong><br>
+                        <span class="resaltado">Calle de la Música 12, Madrid</span>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-logo">Valleny</div>
+            <p>Valleny | Aviso legal y política de privacidad | Contacto</p>
+        </div>
+
+    </footer>
+</body>
+
+</html>
