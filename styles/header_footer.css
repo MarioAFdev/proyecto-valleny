@@ -1,45 +1,46 @@
 
 /* HEADER GLOBAL */
 
-.header {
+.site-header .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 14px 50px;
+    height: 88px
 }
 
 .logo {
-    color: white;
-    font-size: 30px;
-    font-family: Georgia, serif;
+    font-family: "valleny";
+    font-size: 48px;
+    color: #fff;
+    text-decoration: none
 }
 
-
-.right {
+.main-nav ul {
     display: flex;
-    align-items: center;
-    gap: 30px;
+    gap: 28px;
+    list-style: none;
+    margin: 0;
+    padding: 0
 }
 
-
-.nav {
-    display: flex;
-    gap: 25px;
+.main-nav a {
+    color: #fff;
+    text-decoration: underline;
+    text-underline-offset: 6px;
+    font-size: 18px
 }
 
-.nav a {
-    color: white;
-    text-decoration: none;
-    font-size: 14px;
+.main-nav a.active {
+    color: #ee62a9;
 }
 
 .btn-login {
-    color: black;
-    padding: 8px 18px;
-    text-decoration: none;
-    font-weight: bold;
+    padding: 10px 22px;
     border-radius: 25px;
-    background: var(--grediente-rosa, linear-gradient(90deg, #EE62A9 20.19%, #FFC700 100%));
+    background: linear-gradient(90deg, #ee62a9 20%, #ffc700);
+    color: #000;
+    text-decoration: none;
+    font-weight: 600
 }
 
 
@@ -47,7 +48,11 @@
 
 .footer {
     color: #fff;
-    padding: 60px 10% 40px;
+    padding: 60px 80px 40px;
+    max-width: 1400px;
+    margin: 0 auto;
+    border-top: 1px solid #fff;
+    
 }
 
 .footer-top {
@@ -55,7 +60,8 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 60px;
     margin-bottom: 60px;
-    margin-left: 10%;
+    margin-left: 0;
+    
 }
 
 .footer-col h4 {
@@ -121,5 +127,4 @@
 .resaltado {
     margin-top: -30px;
 }
-
 
