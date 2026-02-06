@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style_entrada_blog.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Iniciar sesión - Valleny</title>
+    <link rel="stylesheet" href="styles-iniciar-sesion.css">
     <link rel="stylesheet" href="../styles/header_footer.css">
     <link rel="stylesheet" href="../styles/reset.css">
     <link rel="stylesheet" href="../styles/style_general.css">
@@ -14,65 +14,43 @@
 <body>
     <header class="site-header">
         <div class="container">
-            <a class="logo" href="../home/home.html">Valleny</a>
+            <a class="logo" href="../Home/home.html">Valleny</a>
             <nav class="main-nav" aria-label="Navegación principal">
                 <ul>
-                    <li><a class="nav-link active" href="eventos.html">Eventos</a></li>
-                    <li><a class="nav-link" href="../carta/carta.html">Carta</a></li>
-                    <li><a class="nav-link" href="../blog/blog.html">Blog</a></li>
-                    <li><a class="nav-link" href="../galeria/galeria.html">Galería</a></li>
-                    <li><a class="nav-link" href="../contacto/contacto.html">Contacto</a></li>
+                    <li><a class="nav-link" href="../Eventos/eventos.html">Eventos</a></li>
+                    <li><a class="nav-link" href="../Carta/index-carta.html">Carta</a></li>
+                    <li><a class="nav-link" href="../Blog/blogLandingPage.html">Blog</a></li>
+                    <li><a class="nav-link" href="../Galeria/galeria.html">Galería</a></li>
+                    <li><a class="nav-link" href="../Contacto/index-contacto.html">Contacto</a></li>
                 </ul>
             </nav>
             <a class="btn-login" href="#">Iniciar Sesión</a>
         </div>
     </header>
+
     <main>
-        <section class="seccion-titular">
-            <div class="contenido">
-                <h1 class="titulo">
-                    ¿ES ESTE EL CÓCTEL IDEAL?
-                </h1>
-            </div>
-        </section>
-        <section class="carrousel">
-            <div class="carousel-wrapper">
-                <button class="arrow left" aria-label="Anterior">‹</button>
-                <div class="carousel-container" id="carousel">
+        <section class="login-section">
+            <div class="login-card">
+                <h2>Iniciar sesión</h2>
+                <form class="login-form" action="#" method="post">
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email" required placeholder="tu@ejemplo.com">
 
-                    <div class="card">
-                        <div class="card-image">
-                            <img src="../images/imagenes-carta/Blue Lagoon 1.png"
-                                alt="Imagen 1">
-                        </div>
+                    <label for="password">Contraseña</label>
+                    <input id="password" name="password" type="password" required placeholder="Contraseña">
+
+                    <div class="row">
+                        <label class="checkbox"><input type="checkbox" name="remember"> Recuérdame</label>
+                        <a class="forgot" href="#">¿Olvidaste la contraseña?</a>
                     </div>
 
-                    <div class="card">
-                        <div class="card-image">
-                            <img src="../images/imagenes-carta/Blue Lagoon 1.png"
-                                alt="Imagen 2">
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <div class="card-image">
-                            <img src="../images/imagenes-carta/Blue Lagoon 1.png"
-                                alt="Imagen 3">
-                        </div>
-                    </div>
-
-                </div>
-
-                <button class="arrow right" aria-label="Siguiente">›</button>
-
-                <div class="dots" id="dots">
-                    <button data-index="0" aria-label="Ir a imagen 1"></button>
-                    <button data-index="1" aria-label="Ir a imagen 2"></button>
-                    <button data-index="2" aria-label="Ir a imagen 3"></button>
-                </div>
+                    <button class="btn-submit" type="submit">Entrar</button>
+                </form>
+                <p class="muted">¿No tienes cuenta? <a href="#">Regístrate</a></p>
             </div>
         </section>
     </main>
+
     <footer class="footer">
 
         <div class="footer-top">
@@ -135,6 +113,5 @@
 
     </footer>
 </body>
-
 
 </html>
