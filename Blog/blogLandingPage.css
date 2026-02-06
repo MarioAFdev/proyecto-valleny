@@ -6,14 +6,21 @@
 /* --- 1. BANNER SUPERIOR ("BLOG") --- */
 .banner-BlogLandingPage {
     background-image: url("../images/Imagenes-Blog/banner.jpg");
+    position: relative;
+    height: 320px;
     background-size: cover;
     background-position: center;
     display: flex;
-    justify-content: center;
     align-items: center;
-    padding: 60px 20px;
+    justify-content: center;
     text-align: center;
-    width: 100%;
+}
+
+.contenido {
+    position: relative;
+    color: white;
+    max-width: 900px;
+    padding: 20px;
 }
 
 .banner-BlogLandingPage h1 {
