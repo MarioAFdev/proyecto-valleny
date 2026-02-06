@@ -13,6 +13,7 @@ h2 {
 
 .enlace-article {
     text-decoration: none;
+    color: inherit;
 }
 
 /* HEADER */
