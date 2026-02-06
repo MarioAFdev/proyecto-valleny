@@ -5,13 +5,19 @@ h2 {
     margin: 0 0 22px
 }
 
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px
+}
+
 /* HEADER */
 
-.header {
+.site-header .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 14px 50px;
+    height: 88px
 }
 
 
@@ -19,41 +25,47 @@ h2 {
     color: white;
     font-size: 30px;
     font-family: "valleny";
+    font-size: 48px;
+    color: #fff;
+    text-decoration: none
 }
 
-
-.right {
-    display: flex;
-    align-items: center;
-    gap: 30px;
-}
-
-
-.nav {
-    display: flex;
-    gap: 25px;
-}
-
-.nav a {
+.logo a {
     color: white;
     text-decoration: none;
-    font-size: 14px;
+}
+.main-nav ul {
+    display: flex;
+    gap: 28px;
+    list-style: none;
+    margin: 0;
+    padding: 0
+}
+
+.main-nav a {
+    color: #fff;
+    text-decoration: underline;
+    text-underline-offset: 6px;
+    font-size: 18px
+}
+
+.main-nav a.active {
+    color: #ee62a9;
 }
 
 .btn-login {
-    color: black;
-    padding: 8px 18px;
-    text-decoration: none;
-    font-weight: bold;
+    padding: 10px 22px;
     border-radius: 25px;
-    background: var(--grediente-rosa, linear-gradient(90deg, #EE62A9 20.19%, #FFC700 100%));
+    background: linear-gradient(90deg, #ee62a9 20%, #ffc700);
+    color: #000;
+    text-decoration: none;
+    font-weight: 600
 }
 
 /* HERO */
 
-/* Sección Título */
 .evento-titulo {
-    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 355"><defs><linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:rgba(0,0,0,0.3);stop-opacity:1" /><stop offset="100%" style="stop-color:rgba(0,0,0,0.8);stop-opacity:1" /></linearGradient></defs><rect fill="url(%23grad)" width="1440" height="355"/></svg>');
+    background-image: url(/images/imagenes-evento/imagen-hero.jpg);
     background-position: center;
     background-size: cover;
     padding: 60px 80px;
@@ -146,7 +158,7 @@ h2 {
     text-transform: uppercase;
 }
 
-.hero .overlay {
+.overlay {
     position: absolute;
     inset: 0;
     background: linear-gradient(180deg, rgba(32, 4, 44, 0.45), rgba(32, 4, 44, 0.65))
@@ -252,18 +264,12 @@ h2 {
 }
 
 .btn-comprar {
-    background: linear-gradient(to right, var(--color-accent-pink) 20.192%, var(--color-accent-yellow) 100%);
-    color: var(--color-white);
-    border: none;
-    padding: 12px 30px;
+    padding: 10px 22px;
     border-radius: 25px;
-    font-size: 20px;
-    font-family: "droidsans", sans-serif;
-    font-weight: bold;
-    cursor: pointer;
-    transition: transform 0.2s;
-    width: 234px;
-    height: 49px;
+    background: linear-gradient(90deg, #ee62a9 20%, #ffc700);
+    color: #000;
+    text-decoration: none;
+    font-weight: 600
 }
 
 .btn-comprar:hover {
@@ -351,17 +357,11 @@ h2 {
 }
 
 .badge-genero {
-    border: 2px solid var(--color-accent-pink);
-    border-radius: 25px;
-    padding: 8px 24px;
-    text-align: center;
-    font-family: "droidsans", sans-serif;
-    font-size: 22px;
-    color: var(--color-white);
-    height: 36px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background: transparent;
+    border: 1px solid #ee62a9;
+    padding: 8px 18px;
+    border-radius: 24px;
+    color: #fff
 }
 
 .info-body {

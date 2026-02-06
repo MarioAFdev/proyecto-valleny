@@ -11,25 +11,25 @@
 </head>
 
 <body>
-    <header class="header">
-        <div class="logo">Valleny</div>
-
-        <div class="right">
-            <nav class="nav">
-                <a href="#">Eventos</a>
-                <a href="#">Carta</a>
-                <a href="#">Blog</a>
-                <a href="#">Galería</a>
-                <a href="#">Contacto</a>
+    <header class="site-header">
+        <div class="container">
+            <a class="logo" href="../Home/home.html">Valleny</a>
+            <nav class="main-nav" aria-label="Navegación principal">
+                <ul>
+                    <li><a class="nav-link active" href="../eventos/eventos.html">Eventos</a></li>
+                    <li><a class="nav-link" href="../Carta/index-carta.html">Carta</a></li>
+                    <li><a class="nav-link" href="../Blog/blogLandingPage.html">Blog</a></li>
+                    <li><a class="nav-link" href="../Galeria/galeria.html">Galería</a></li>
+                    <li><a class="nav-link" href="../Contacto/index-contacto.html">Contacto</a></li>
+                </ul>
             </nav>
-
-            <a href="#" class="btn-login">Iniciar Sesión</a>
+            <a class="btn-login" href="#">Iniciar Sesión</a>
         </div>
     </header>
     <main>
         <section class="evento-titulo">
             <div class="titulo-content">
-                <a href="#" class="back-link">
+                <a href="../eventos/eventos.html" class="back-link">
                     <svg width="10" height="17" viewBox="0 0 10 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M9 1L1 8.5L9 16" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
@@ -49,9 +49,7 @@
                         <p class="info-label">Interesado</p>
                         <div class="contador-interes">
                             <span class="numero-interes">100</span>
-                            <svg width="24" height="32" viewBox="0 0 24 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 2C12 2 3 9 3 16C3 21.5228 7.47715 26 12 26C16.5228 26 21 21.5228 21 16C21 9 12 2 12 2Z" fill="white" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
+                            <img src="/images/imagenes-eventos/icons/bookmark.svg" alt="">
                         </div>
                     </div>
                 </div>
@@ -105,13 +103,13 @@
                 <div class="compartir-box">
                     <p>Compartir</p>
                     <a href="#" class="social-btn twitter">
-                        <img src="" alt="twitter icon">
+                        <img src="/images/Imagenes Contacto/twitter_icono-removebg-preview 1.png" alt="twitter icon">
                     </a>
                     <a href="#" class="social-btn instagram">
-                        <img src="" alt="instagram icon">
+                        <img src="/images/Imagenes Contacto/instagramius-removebg-preview 1.png" alt="instagram icon">
                     </a>
                     <a href="#" class="social-btn facebook">
-                        <img src="" alt="facebook icon">
+                        <img src="/images/Imagenes Contacto/descarga-removebg-preview 1.png" alt="facebook icon">
                     </a>
                 </div>
             </div>
@@ -131,7 +129,7 @@
                     </div>
 
                     <div class="info-image">
-                        <img src="" alt="Jazz Nights Cartel">
+                        <img src="/images/imagenes-evento/evento1.png" alt="Jazz Nights Cartel">
                     </div>
                 </div>
             </div>
@@ -144,26 +142,16 @@
             <div class="eventos-grid">
                 <div class="evento-card">
                     <div class="card-image">
-                        <img src="" alt="Jazz Nights">
+                        <img src="/images/imagenes-evento/evento1.png" alt="Jazz Nights">
                     </div>
                     <div class="card-content">
                         <div class="card-header">
                             <p class="card-date">SAB, 28 OCT</p>
-                            <svg width="15" height="20" viewBox="0 0 15 20" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M7.5 18C3.5 15 1 12 1 9C1 5.686 3.686 3 7 3C10.314 3 13 5.686 13 9C13 12 10.5 15 7.5 18Z"
-                                    fill="white" stroke="white" stroke-width="1" />
-                            </svg>
+                            <img src="/images/imagenes-eventos/icons/bookmark.svg" alt="">
                         </div>
                         <h3 class="card-title">Jazz Nights</h3>
                         <div class="card-likes">
-                            <svg width="17" height="20" viewBox="0 0 17 20" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M8.5 18C8.1 17.5 1 11 1 7C1 4.2 3.2 2 6 2C7.5 2 9 3 8.5 5C8 3 9.5 2 11 2C13.8 2 16 4.2 16 7C16 11 9 17.5 8.5 18Z"
-                                    fill="white" />
-                            </svg>
+                            <img src="/images/imagenes-eventos/icons/user.svg" alt="">
                             <span>100</span>
                         </div>
                     </div>
@@ -171,26 +159,16 @@
 
                 <div class="evento-card">
                     <div class="card-image">
-                        <img src="https://via.placeholder.com/286x365" alt="Jazz Nights">
+                        <img src="/images/imagenes-evento/evento1.png" alt="Jazz Nights">
                     </div>
                     <div class="card-content">
                         <div class="card-header">
                             <p class="card-date">SAB, 28 OCT</p>
-                            <svg width="15" height="20" viewBox="0 0 15 20" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M7.5 18C3.5 15 1 12 1 9C1 5.686 3.686 3 7 3C10.314 3 13 5.686 13 9C13 12 10.5 15 7.5 18Z"
-                                    fill="none" stroke="white" stroke-width="1" />
-                            </svg>
+                            <img src="/images/imagenes-eventos/icons/bookmark.svg" alt="">
                         </div>
                         <h3 class="card-title">Jazz Nights</h3>
                         <div class="card-likes">
-                            <svg width="17" height="20" viewBox="0 0 17 20" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M8.5 18C8.1 17.5 1 11 1 7C1 4.2 3.2 2 6 2C7.5 2 9 3 8.5 5C8 3 9.5 2 11 2C13.8 2 16 4.2 16 7C16 11 9 17.5 8.5 18Z"
-                                    fill="white" />
-                            </svg>
+                            <img src="/images/imagenes-eventos/icons/user.svg" alt="">
                             <span>100</span>
                         </div>
                     </div>
@@ -198,26 +176,16 @@
 
                 <div class="evento-card">
                     <div class="card-image">
-                        <img src="https://via.placeholder.com/286x365" alt="Jazz Nights">
+                        <img src="/images/imagenes-evento/evento1.png" alt="Jazz Nights">
                     </div>
                     <div class="card-content">
                         <div class="card-header">
                             <p class="card-date">SAB, 28 OCT</p>
-                            <svg width="15" height="20" viewBox="0 0 15 20" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M7.5 18C3.5 15 1 12 1 9C1 5.686 3.686 3 7 3C10.314 3 13 5.686 13 9C13 12 10.5 15 7.5 18Z"
-                                    fill="white" stroke="white" stroke-width="1" />
-                            </svg>
+                            <img src="/images/imagenes-eventos/icons/bookmark.svg" alt="">
                         </div>
                         <h3 class="card-title">Jazz Nights</h3>
                         <div class="card-likes">
-                            <svg width="17" height="20" viewBox="0 0 17 20" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M8.5 18C8.1 17.5 1 11 1 7C1 4.2 3.2 2 6 2C7.5 2 9 3 8.5 5C8 3 9.5 2 11 2C13.8 2 16 4.2 16 7C16 11 9 17.5 8.5 18Z"
-                                    fill="white" />
-                            </svg>
+                            <img src="/images/imagenes-eventos/icons/user.svg" alt="">
                             <span>100</span>
                         </div>
                     </div>
@@ -225,26 +193,16 @@
 
                 <div class="evento-card">
                     <div class="card-image">
-                        <img src="https://via.placeholder.com/286x365" alt="Jazz Nights">
+                        <img src="/images/imagenes-evento/evento1.png" alt="Jazz Nights">
                     </div>
                     <div class="card-content">
                         <div class="card-header">
                             <p class="card-date">SAB, 28 OCT</p>
-                            <svg width="15" height="20" viewBox="0 0 15 20" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M7.5 18C3.5 15 1 12 1 9C1 5.686 3.686 3 7 3C10.314 3 13 5.686 13 9C13 12 10.5 15 7.5 18Z"
-                                    fill="white" stroke="white" stroke-width="1" />
-                            </svg>
+                            <img src="/images/imagenes-eventos/icons/bookmark.svg" alt="">
                         </div>
                         <h3 class="card-title">Jazz Nights</h3>
                         <div class="card-likes">
-                            <svg width="17" height="20" viewBox="0 0 17 20" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M8.5 18C8.1 17.5 1 11 1 7C1 4.2 3.2 2 6 2C7.5 2 9 3 8.5 5C8 3 9.5 2 11 2C13.8 2 16 4.2 16 7C16 11 9 17.5 8.5 18Z"
-                                    fill="white" />
-                            </svg>
+                            <img src="/images/imagenes-eventos/icons/user.svg" alt="">
                             <span>100</span>
                         </div>
                     </div>
