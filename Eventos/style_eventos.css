@@ -11,6 +11,10 @@ h2 {
     padding: 0 20px
 }
 
+.enlace-article {
+    text-decoration: none;
+}
+
 /* HEADER */
 
 .site-header .container {
