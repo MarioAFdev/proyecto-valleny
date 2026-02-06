@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Regístrate - Valleny</title>
+    <link rel="stylesheet" href="styles-iniciar-sesion.css">
+    <link rel="stylesheet" href="../styles/header_footer.css">
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/style_general.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <a class="logo" href="../Home/home.html">Valleny</a>
+            <nav class="main-nav" aria-label="Navegación principal">
+                <ul>
+                    <li><a class="nav-link" href="../Eventos/eventos.html">Eventos</a></li>
+                    <li><a class="nav-link" href="../Carta/index-carta.html">Carta</a></li>
+                    <li><a class="nav-link" href="../Blog/blogLandingPage.html">Blog</a></li>
+                    <li><a class="nav-link" href="../Galeria/galeria.html">Galería</a></li>
+                    <li><a class="nav-link" href="../Contacto/index-contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+            <a class="btn-login" href="index-iniciar-sesion.html">Iniciar Sesión</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="login-section">
+            <div class="login-card">
+                <h2>Regístrate</h2>
+                <form class="login-form" action="#" method="post">
+                    <label for="nombre">Nombre</label>
+                    <input id="nombre" name="nombre" type="text" required placeholder="Tu nombre">
+
+                    <label for="apellido">Apellido</label>
+                    <input id="apellido" name="apellido" type="text" required placeholder="Tu apellido">
+
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email" required placeholder="tu@ejemplo.com">
+
+                    <label for="password">Contraseña</label>
+                    <input id="password" name="password" type="password" required placeholder="Contraseña">
+
+                    <label for="confirm">Confirmar contraseña</label>
+                    <input id="confirm" name="confirm" type="password" required placeholder="Repite la contraseña">
+
+                    <label class="checkbox"><input type="checkbox" name="terms" required> Acepto los términos y condiciones</label>
+
+                    <button class="btn-submit" type="submit">Registrarme</button>
+                </form>
+                <p class="muted">¿Ya tienes cuenta? <a href="index-iniciar-sesion.html">Inicia sesión</a></p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-col">
+                <h4>Nuestros Servicios</h4>
+                <ul>
+                    <li><a href="#">Eventos</a></li>
+                    <li><a href="#">Carta</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Noticias</h4>
+                <ul>
+                    <li><a href="#">Últimas</a></li>
+                </ul>
+            </div>
+            <div class="footer-col footer-contacto">
+                <div class="contact-item">
+                    <img src="../images/imagenes-carta/Iconos footer/tel.png" alt="Teléfono" class="footer-icon">
+                    <div class="contact-text"><strong>Llámanos</strong><br><span class="resaltado">600 000 000</span></div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-logo">Valleny</div>
+            <p>Valleny | Aviso legal y política de privacidad | Contacto</p>
+        </div>
+    </footer>
+</body>
+</html>
