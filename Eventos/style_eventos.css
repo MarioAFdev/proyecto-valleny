@@ -208,8 +208,12 @@ h2 {
     align-items: flex-start
 }
 
+.thumb {
+    flex: 1
+}
+
 .thumb img {
-    width: 220px;
+    width: 100%;
     height: auto;
     display: block;
     border-radius: 4px
