@@ -4,3 +4,32 @@
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: "droidsans";
+  src: url("../fonts/droid-sans/DroidSans.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "piazzola";
+  src: url("../fonts/Piazzolla/static/Piazzolla_24pt-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background-color: #20042C;
+}
+@font-face {
+  font-family: "valleny";
+  src: url("../fonts/Valleny.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+body{
+  background-color: #20042C;
+  color: #fffffff2;
+  font-family: "droidsans";
+}
