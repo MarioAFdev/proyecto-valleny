@@ -31,17 +31,35 @@
     --text-white: #ffffff;
 }
 
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.información {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 40px;
+    color: #FFF;
+}
+
 .cocteles-favoritos {
     padding: 60px 20px;
     text-align: center;
 }
 
 .carousel-wrapper {
-    max-width: 900px;
+    max-width: 1200px;
     margin: 0 auto;
     position: relative;
-    padding: 18px; /* espacio interior para que bullets queden dentro del borde */
-    padding-bottom: 60px; /* espacio para bullets dentro del borde */
+    padding: 18px;
+    /* espacio interior para que bullets queden dentro del borde */
+    padding-bottom: 60px;
+    /* espacio para bullets dentro del borde */
     border: 2px solid var(--neon-pink);
     border-radius: 20px;
     background: #0b0b0b00;
@@ -88,7 +106,7 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background: rgba(0,0,0,0.4);
+    background: rgba(0, 0, 0, 0.4);
     color: #fff;
     border: none;
     width: 44px;
@@ -102,15 +120,20 @@
     z-index: 10;
 }
 
-.arrow.left { left: 8px; }
-.arrow.right { right: 8px; }
+.arrow.left {
+    left: 8px;
+}
 
-/* Bullets dentro del borde */
+.arrow.right {
+    right: 8px;
+}
+
+
 .dots {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    bottom: 14px; /* dentro del borde del wrapper rosa */
+    bottom: 14px;
     display: flex;
     gap: 12px;
     z-index: 15;
@@ -120,7 +143,7 @@
 .dots button {
     width: 12px;
     height: 12px;
-    background-color: rgba(0,0,0,0.45);
+    background-color: rgba(0, 0, 0, 0.45);
     border: none;
     border-radius: 50%;
     cursor: pointer;
@@ -133,4 +156,168 @@
     background-color: var(--neon-pink);
     transform: scale(1.2);
     box-shadow: 0 0 8px var(--neon-pink);
+}
+
+.carrousel {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.titular {
+    color: #FFF;
+    font-family: "piazzola";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    text-align: left;
+    position: relative;
+    max-width: 1200px;
+    width: fit-content;
+    box-sizing: border-box;
+}
+
+.titular::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, #EE62A9 20.19%, #FFC700 100%);
+    border-radius: 2px;
+}
+
+.texto {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    opacity: 0.9;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.comment-card {
+  background: linear-gradient(135deg, #2b033d 0%, #4a0e8f 100%);
+  width: 1200px;
+  border-radius: 20px;
+  padding: 30px;
+  color: white;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid #EE62A9;
+  margin-bottom: 50px;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 25px;
+  font-weight: 400;
+  opacity: 0.9;
+}
+
+.comment-item {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 25px;
+  align-items: flex-start;
+}
+
+.user-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: linear-gradient(to bottom, #ff8a00, #da1b60); /* Degradado del avatar */
+  flex-shrink: 0;
+}
+
+.comment-content {
+  flex-grow: 1;
+}
+
+.user-info {
+  margin-bottom: 4px;
+}
+
+.username {
+  font-weight: bold;
+  margin-right: 10px;
+  font-size: 0.95rem;
+}
+
+.time {
+  font-size: 0.85rem;
+  opacity: 0.6;
+}
+
+.text {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  opacity: 0.8;
+  margin: 0;
+}
+
+.likes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 40px;
+}
+
+.heart-icon {
+  color: #ff8a00;
+  font-size: 0.8rem;
+}
+
+.like-count {
+  font-size: 0.75rem;
+  opacity: 0.8;
+}
+
+/* Input inferior */
+.comment-input-container {
+  margin-top: 30px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.comment-input-container input {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 25px;
+  padding: 12px 50px 12px 20px;
+  color: white;
+  outline: none;
+}
+
+.comment-input-container input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.send-btn {
+  position: absolute;
+  right: 10px;
+  background: none;
+  border: none;
+  color: #ff8a00;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transform: rotate(-20deg); /* Para inclinar la flecha */
 }
