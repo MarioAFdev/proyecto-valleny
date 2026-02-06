@@ -188,6 +188,7 @@
 .contenedor-galeria {
     width: 110%;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     align-items: center;
     gap: 5px;
@@ -198,37 +199,6 @@
     object-fit: cover;
 }
 
-/* SECCIÓN UBICACIÓN */
-.seccion-ubicacion {
-    padding: 60px 5%;
-    background: linear-gradient(180deg, rgba(18, 4, 30, 0.95) 0%, rgba(31, 0, 51, 0.85) 100%);
-}
-
-.titulo-ubicacion {
-    font-family: Piazzolla;
-    font-size: 2.2rem;
-    color: #fff;
-    font-weight: 700;
-    margin-bottom: 28px;
-}
-
-.ubicacion-contenedor {
-    border-radius: 12px;
-    overflow: hidden;
-    margin-bottom: 18px;
-    box-shadow: 0 10px 40px rgba(0,0,0,0.4);
-}
-
-.ubicacion-mapa {
-    border: none;
-    display: block;
-}
-
-.direccion-texto {
-    color: #ccc;
-    font-size: 1.1rem;
-    text-align: left;
-}
 
 /* SECCIÓN NEWSLETTER */
 .seccion-newsletter {
@@ -291,6 +261,33 @@
 .newsletter-btn:hover {
     transform: scale(1.08);
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Boton cargar mas */
+.contenedor-cargar-mas {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    align-items: center;
+}
+
+.btn-cargar-grande {
+    padding: 15px 50px;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(90deg, #EE62A9 0%, #FFC700 100%);
+    color: #000;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(238, 98, 169, 0.3);
+    transition: all 0.3s ease;
+}
+
+.btn-cargar-grande:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(238, 98, 169, 0.5);
 }
 
 /* FOOTER GLOBAL*/
