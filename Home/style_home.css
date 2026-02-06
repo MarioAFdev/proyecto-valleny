@@ -8,10 +8,11 @@
     padding: 14px 50px;
 }
 
-.logo {
-    color: white;
-    font-size: 30px;
-    font-family: Georgia, serif;
+.logo.active {
+    color: #ee62a9;
+    font-family: "valleny";
+    font-size: 48px;
+    text-decoration: none
 }
 
 
