@@ -16,11 +16,13 @@
 }
 
 .banner-BlogLandingPage h1 {
-    margin: 0; /* Quita márgenes invisibles del navegador */
+    margin: 0;
+    /* Quita márgenes invisibles del navegador */
     line-height: 1;
     font-family: "Piazzola";
     font-size: 4rem;
-    color: white; /* Color oscuro para contrastar con el beige */
+    color: white;
+    /* Color oscuro para contrastar con el beige */
 }
 
 
@@ -30,14 +32,14 @@
     background-color: #20042C;
     border: 1px solid #EE62A9;
     border-radius: 30px;
-    
+
     width: 95%;
     max-width: 1600px;
     margin: 50px auto;
-    
+
     /* REDUCIMOS EL PADDING: De 30px a 20px para quitar altura extra */
-    padding: 20px; 
-    
+    padding: 20px;
+
     display: flex;
     align-items: center;
     gap: 30px;
@@ -48,16 +50,18 @@
     /* CAMBIO CLAVE: */
     /* Le decimos que no crezca más de 400px de ancho. */
     /* Al ser más estrecha, la imagen será automáticamente MÁS BAJA. */
-    flex: 0 0 400px; 
-    max-width: 40%; /* Por si se ve en pantallas medianas */
-    
+    flex: 0 0 400px;
+    max-width: 40%;
+    /* Por si se ve en pantallas medianas */
+
     padding: 0;
     display: flex;
 }
 
 .imagen-blogprincipal img {
     width: 100%;
-    height: auto; /* Mantiene la proporción */
+    height: auto;
+    /* Mantiene la proporción */
     border-radius: 15px;
     display: block;
     object-fit: cover;
@@ -65,7 +69,8 @@
 
 /* -- Columna del Texto -- */
 .destacado-texto {
-    flex: 1; /* El texto ocupa el resto del espacio */
+    flex: 1;
+    /* El texto ocupa el resto del espacio */
     color: white;
     display: flex;
     flex-direction: column;
@@ -75,7 +80,8 @@
 .destacado-texto h3 {
     font-family: 'valleny', serif;
     font-size: 2.5rem;
-    margin: 10px 0; /* Margen reducido un poco */
+    margin: 10px 0;
+    /* Margen reducido un poco */
     color: white;
     line-height: 1.1;
 }
@@ -85,7 +91,8 @@
     color: #ccc;
     font-size: 1rem;
     line-height: 1.5;
-    margin-bottom: 20px; /* Margen reducido */
+    margin-bottom: 20px;
+    /* Margen reducido */
 }
 
 /* -- Metadatos -- */
@@ -100,38 +107,152 @@
 
 .meta-inferior {
     border-top: 1px solid rgba(255, 255, 255, 0.2);
-    padding-top: 10px; /* Reducido */
+    padding-top: 10px;
+    /* Reducido */
     display: flex;
     justify-content: space-between;
     font-size: 0.85rem;
     color: #aaa;
 }
 
+
+
 /* --- 3. REJILLA DE BLOGS (Las tarjetas de abajo) --- */
-.contenedor-blogs {
+/* --- SECCIÓN BLOG (ESTRUCTURA BÁSICA) --- */
+
+.seccion-blog {
+    padding: 60px 8%;
+    background: linear-gradient(180deg, rgba(31, 0, 51, 0.8) 0%, rgba(51, 10, 76, 0.9) 100%);
+    margin-top: 50px;
+
+}
+
+/* Título de la sección */
+.seccion-blog h2 {
+    font-family: "Piazzolla", serif;
+    font-size: 2.5rem;
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+/* El Grid contenedor */
+.grid-blog {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
-    
-    /* Alineamos el ancho con la tarjeta de arriba */
-    width: 95%;
-    max-width: 1600px;
-    margin: 60px auto; 
 }
 
-/* Estilo para las cajas dentro del grid */
-.contenedor-blogs section {
-    background-color: #20042C;
-    border: 1px solid #EE62A9;
-    border-radius: 12px;
-    padding: 20px;
-    min-height: 250px;
-    color: white;
-    
-    /* Centrado provisional para los números */
+/* --- LA TARJETA (article) --- */
+.grid-blog article {
+    border: 2px solid #EE62A9;
+    border-radius: 20px;
+    overflow: hidden;
+    background: rgba(20, 10, 35, 0.6);
+    transition: all 0.3s ease;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2rem;
+    flex-direction: column;
 }
 
+/* Efecto hover en la tarjeta */
+.grid-blog article:hover {
+    border-color: #ee62a9;
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(238, 98, 169, 0.2);
+}
+
+.grid-blog a {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+/* --- CAJA DE LA IMAGEN (div) --- */
+.grid-blog .caja-img {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.grid-blog img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.grid-blog article:hover img {
+    transform: scale(1.05); /* Zoom imagen */
+}
+
+/* --- CAJA DEL CONTENIDO (div) --- */
+.grid-blog .caja-info {
+    padding: 25px;
+    flex-grow: 1; /* Esto hace que ocupe todo el espacio disponible */
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+
+/* Título */
+.grid-blog h3 {
+    font-family: "Piazzolla", serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: #fff;
+}
+
+/* Fecha (p) */
+.grid-blog .fecha {
+    font-size: 0.9rem;
+    color: #ccc;
+    margin-bottom: 15px;
+}
+
+/* Descripción (p) */
+.grid-blog .desc {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #ddd;
+    margin-bottom: 20px;
+    flex-grow: 1; /* Empuja los botones hacia abajo */
+}
+
+/* --- CAJA DE BOTONES (div abajo) --- */
+.grid-blog .caja-botones {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: auto; /* Se asegura de pegarse al fondo */
+}
+
+/* Botón "Leer más" */
+.grid-blog button {
+    padding: 8px 18px;
+    border: none;
+    border-radius: 20px;
+    background: linear-gradient(90deg, #ee62a9 20%, #ffc700 100%);
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.grid-blog button:hover {
+    transform: scale(1.05);
+}
+
+/* Corazón (span) */
+.grid-blog .corazon {
+    font-size: 1.5rem;
+    color: #ddd;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.grid-blog article:hover .corazon {
+    color: #ee62a9;
+}
