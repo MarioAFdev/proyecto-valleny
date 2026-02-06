@@ -29,12 +29,13 @@
     background-color: #20042C;
     border: 1px solid #EE62A9;
     border-radius: 30px;
-    
+
     /* Alineación central y ancho máximo */
     width: 95%;
-    max-width: 1400px; /* Ajustado para que no sea excesivamente ancho */
+    max-width: 1400px;
+    /* Ajustado para que no sea excesivamente ancho */
     margin: 50px auto;
-    
+
     padding: 30px;
     display: flex;
     align-items: center;
@@ -43,7 +44,8 @@
 
 /* Columna Imagen */
 .imagen-blogprincipal {
-    flex: 0 0 450px; /* Ancho fijo para la imagen */
+    flex: 0 0 450px;
+    /* Ancho fijo para la imagen */
     max-width: 50%;
 }
 
@@ -103,16 +105,19 @@
 .seccion-blog {
     /* Fondo degradado suave */
     background: linear-gradient(180deg, rgba(31, 0, 51, 0.8) 0%, rgba(51, 10, 76, 0.9) 100%);
-    padding: 60px 0; /* Padding vertical, el horizontal lo controla el contenedor */
+    padding: 60px 0;
+    /* Padding vertical, el horizontal lo controla el contenedor */
     margin-top: 50px;
 }
 
 /* Contenedor Grid (Alineado con la tarjeta principal) */
 .grid-blog {
     width: 95%;
-    max-width: 1400px; /* Mismo ancho que .blog-principal */
-    margin: 0 auto;    /* Centrado */
-    
+    max-width: 1400px;
+    /* Mismo ancho que .blog-principal */
+    margin: 0 auto;
+    /* Centrado */
+
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
@@ -120,10 +125,12 @@
 
 /* --- ESTILO DE LAS TARJETAS --- */
 .grid-blog article {
-    border: 2px solid #EE62A9; /* Borde rosa neón */
+    border: 2px solid #EE62A9;
+    /* Borde rosa neón */
     border-radius: 20px;
     overflow: hidden;
-    background: rgba(20, 10, 35, 0.9); /* Fondo oscuro */
+    background: rgba(20, 10, 35, 0.9);
+    /* Fondo oscuro */
     transition: all 0.3s ease;
     display: flex;
     flex-direction: column;
@@ -131,7 +138,8 @@
 
 .grid-blog article:hover {
     transform: translateY(-8px);
-    box-shadow: 0 0 20px rgba(238, 98, 169, 0.4); /* Resplandor al pasar ratón */
+    box-shadow: 0 0 20px rgba(238, 98, 169, 0.4);
+    /* Resplandor al pasar ratón */
 }
 
 .grid-blog a {
@@ -145,7 +153,8 @@
 /* Caja Imagen */
 .grid-blog .caja-img {
     width: 100%;
-    height: 220px; /* Altura ajustada a estilo Figma */
+    height: 220px;
+    /* Altura ajustada a estilo Figma */
     overflow: hidden;
 }
 
@@ -161,12 +170,15 @@
 }
 
 /* Caja Info */
-.grid-blog .caja-info {
+.caja-info {
     padding: 25px;
-    flex-grow: 1;
     display: flex;
-    flex-direction: column;
     color: #fff;
+    align-items: center;
+}
+
+.informacion-texto{
+    flex: 80%;
 }
 
 .grid-blog h3 {
@@ -179,7 +191,8 @@
 
 .grid-blog .fecha {
     font-size: 0.85rem;
-    color: #EE62A9; /* Fecha en rosa */
+    color: #EE62A9;
+    /* Fecha en rosa */
     margin-bottom: 15px;
 }
 
@@ -218,13 +231,30 @@
 
 .grid-blog .corazon {
     font-size: 1.8rem;
-    color: #EE62A9; /* Icono en rosa */
+    color: #EE62A9;
+    /* Icono en rosa */
     cursor: pointer;
     transition: transform 0.2s;
 }
 
 .grid-blog .corazon:hover {
     transform: scale(1.2);
+}
+
+/* ICONO DE GUARDAR DE LAS TARJETAS */
+.icono-guardar {
+    float: 20%;
+    bottom: 20px;
+    height: 24px;
+    
+}
+
+.icono-guardar img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Evita que se corte */
+    
+ 
 }
 
 /* --- BOTÓN CARGAR MÁS (Nuevo) --- */
@@ -252,9 +282,4 @@
 .btn-cargar-grande:hover {
     transform: translateY(-3px);
     box-shadow: 0 6px 20px rgba(238, 98, 169, 0.5);
-}
-
-/* Clase para ocultar elementos (necesaria para el JS) */
-.oculto {
-    display: none;
 }
