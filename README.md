@@ -16,5 +16,5 @@ Página web para local de coctelería y eventos en vivo
 ## Colaboradores
 - Adrián Carrasco
 - David Cuesta
-- Daniel Funerarias
+- Daniel Ventura
 - Mario Antúnez
