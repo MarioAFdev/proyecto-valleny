@@ -1,67 +1,64 @@
 /* =========================================
-   ESTILOS LANDING PAGE BLOG (FINAL LIMPIO)
-   Archivo: styles/blogLandingPage.css
+   ESTILOS BLOG LANDING PAGE
    ========================================= */
 
-/* --- 1. BANNER SUPERIOR ("BLOG") --- */
+/* --- 1. BANNER SUPERIOR --- */
 .banner-BlogLandingPage {
     background-image: url("../images/Imagenes-Blog/banner.jpg");
-    position: relative;
-    height: 320px;
     background-size: cover;
     background-position: center;
+    height: 320px;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
+    position: relative;
 }
 
 .contenido {
-    position: relative;
-    color: white;
     max-width: 900px;
     padding: 20px;
+    color: white;
+    position: relative;
 }
 
 .banner-BlogLandingPage h1 {
-    margin: 0;
-    line-height: 1;
     font-family: "Piazzolla", serif;
     font-size: 4rem;
-    color: white;
+    line-height: 1;
+    margin: 0;
 }
 
-/* --- 2. TARJETA DESTACADA (La grande) --- */
+/* --- 2. TARJETA DESTACADA (PRINCIPAL) --- */
 .blog-principal {
     background-color: #20042C;
     border: 1px solid #EE62A9;
     border-radius: 30px;
-
-    /* Alineación central y ancho máximo */
     width: 95%;
     max-width: 1400px;
-    /* Ajustado para que no sea excesivamente ancho */
     margin: 50px auto;
-
     padding: 30px;
-    display: flex;
-    align-items: center;
-    gap: 40px;
-    transition: transform 0.2s;
+    transition: transform 0.2s, box-shadow 0.2s;
 }
-
 
 .blog-principal:hover {
     transform: translateY(-8px);
     box-shadow: 0 0 20px rgba(238, 98, 169, 0.4);
-    /* Resplandor al pasar ratón */
+}
 
+/* Estilo para el enlace contenedor */
+.blog-principal > a {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    text-decoration: none;
+    color: inherit;
+    width: 100%;
 }
 
 /* Columna Imagen */
 .imagen-blogprincipal {
     flex: 0 0 450px;
-    /* Ancho fijo para la imagen */
     max-width: 50%;
 }
 
@@ -73,91 +70,84 @@
     object-fit: cover;
 }
 
-
-
 /* Columna Texto */
 .destacado-texto {
     flex: 1;
-    color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    color: white;
 }
 
 .destacado-texto h3 {
-    font-family: 'valleny', serif;
+    font-family: "Piazzola";
     font-size: 2.8rem;
-    margin: 15px 0;
-    color: white;
     line-height: 1.1;
+    margin: 15px 0;
 }
 
 .destacado-texto p {
     font-family: 'droidsans', sans-serif;
-    color: #ccc;
     font-size: 1rem;
     line-height: 1.6;
+    color: #ccc;
     margin-bottom: 25px;
 }
 
+/* Metadatos */
 .fecha-del-post {
-    color: #EE62A9;
-    font-weight: bold;
-    font-size: 0.9rem;
-    margin-bottom: 5px;
     display: flex;
     gap: 10px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #EE62A9;
+    margin-bottom: 5px;
 }
 
 .meta-inferior {
-    border-top: 1px solid rgba(255, 255, 255, 0.2);
-    padding-top: 15px;
     display: flex;
     justify-content: space-between;
+    padding-top: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
     font-size: 0.85rem;
     color: #aaa;
 }
 
-/* --- 3. SECCIÓN REJILLA DE BLOGS --- */
+.heart-icon {
+  color: #ff8a00;
+  font-size: 0.8rem;
+}
 
+/* --- 3. SECCIÓN REJILLA (GRID) --- */
 .seccion-blog {
-    /* Fondo degradado suave */
     background: linear-gradient(180deg, rgba(31, 0, 51, 0.8) 0%, rgba(51, 10, 76, 0.9) 100%);
     padding: 60px 0;
-    /* Padding vertical, el horizontal lo controla el contenedor */
     margin-top: 50px;
 }
 
-/* Contenedor Grid (Alineado con la tarjeta principal) */
 .grid-blog {
-    width: 95%;
-    max-width: 1400px;
-    /* Mismo ancho que .blog-principal */
-    margin: 0 auto;
-    /* Centrado */
-
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
+    width: 95%;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
-/* --- ESTILO DE LAS TARJETAS --- */
+/* --- ESTILO TARJETAS (ARTÍCULOS) --- */
 .grid-blog article {
+    background: rgba(20, 10, 35, 0.9);
     border: 2px solid #EE62A9;
-    /* Borde rosa neón */
     border-radius: 20px;
     overflow: hidden;
-    background: rgba(20, 10, 35, 0.9);
-    /* Fondo oscuro */
-    transition: all 0.3s ease;
     display: flex;
     flex-direction: column;
+    transition: all 0.3s ease;
 }
 
 .grid-blog article:hover {
     transform: translateY(-8px);
     box-shadow: 0 0 20px rgba(238, 98, 169, 0.4);
-    /* Resplandor al pasar ratón */
 }
 
 .grid-blog a {
@@ -168,11 +158,10 @@
     height: 100%;
 }
 
-/* Caja Imagen */
+/* Imagen Tarjeta */
 .grid-blog .caja-img {
     width: 100%;
     height: 220px;
-    /* Altura ajustada a estilo Figma */
     overflow: hidden;
 }
 
@@ -187,30 +176,31 @@
     transform: scale(1.05);
 }
 
-/* Caja Info */
+/* Info Tarjeta */
 .caja-info {
     padding: 25px;
     display: flex;
+    align-items: center; /* Centrado vertical del icono y texto */
     color: #fff;
-    align-items: center;
+    flex-grow: 1;
 }
 
 .informacion-texto {
-    flex: 80%;
+    flex: 1;
+    padding-right: 15px;
 }
 
 .grid-blog h3 {
     font-family: "Piazzolla", serif;
     font-size: 1.4rem;
     font-weight: 700;
-    margin-bottom: 5px;
     color: white;
+    margin-bottom: 5px;
 }
 
 .grid-blog .fecha {
     font-size: 0.85rem;
     color: #EE62A9;
-    /* Fecha en rosa */
     margin-bottom: 15px;
 }
 
@@ -218,78 +208,40 @@
     font-size: 0.95rem;
     line-height: 1.5;
     color: #ddd;
-    margin-bottom: 20px;
-    flex-grow: 1;
+    margin-bottom: 0;
 }
 
-/* Botones inferiores */
-.grid-blog .caja-botones {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: auto;
-}
-
-.grid-blog button {
-    padding: 8px 20px;
-    border: none;
-    border-radius: 20px;
-    /* Gradiente amarillo-rosa */
-    background: linear-gradient(90deg, #EE62A9 0%, #FFC700 100%);
-    color: #000;
-    font-weight: bold;
-    cursor: pointer;
-    transition: transform 0.2s;
-}
-
-.grid-blog button:hover {
-    transform: scale(1.05);
-    opacity: 0.9;
-}
-
-.grid-blog .corazon {
-    font-size: 1.8rem;
-    color: #EE62A9;
-    /* Icono en rosa */
-    cursor: pointer;
-    transition: transform 0.2s;
-}
-
-.grid-blog .corazon:hover {
-    transform: scale(1.2);
-}
-
-/* ICONO DE GUARDAR DE LAS TARJETAS */
+/* Icono Guardar */
 .icono-guardar {
-    float: 20%;
-    bottom: 20px;
+    width: 24px;
     height: 24px;
-    margin-left: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
 }
 
 .icono-guardar img {
     width: 100%;
     height: 100%;
     object-fit: contain;
-    /* Evita que se corte */
-    margin-top: 15px;
-
+    margin-top: 50px;
 }
 
-/* --- BOTÓN CARGAR MÁS (Nuevo) --- */
+/* --- BOTÓN CARGAR MÁS --- */
 .contenedor-cargar-mas {
-    width: 100%;
     display: flex;
     justify-content: center;
-    margin-top: 60px;
     align-items: center;
+    width: 100%;
+    margin-top: 60px;
 }
 
 .btn-cargar-grande {
     padding: 15px 50px;
+    background: linear-gradient(90deg, #EE62A9 0%, #FFC700 100%);
     border: none;
     border-radius: 50px;
-    background: linear-gradient(90deg, #EE62A9 0%, #FFC700 100%);
     color: #000;
     font-size: 1.1rem;
     font-weight: bold;
