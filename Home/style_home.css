@@ -253,8 +253,8 @@ a {
     padding: 8px 18px;
     border: none;
     border-radius: 20px;
-    background: linear-gradient(90deg, #ee62a9 20%, #ffc700 100%);
-    color: #000;
+    background: linear-gradient(90deg, #3A205C 25.96%, #9909FF 100%);
+    color: #ffffff;
     font-weight: bold;
     font-size: 0.85rem;
     cursor: pointer;
@@ -264,7 +264,7 @@ a {
 
 .btn-leer-mas:hover {
     transform: scale(1.05);
-    box-shadow: 0 5px 15px rgba(238, 98, 169, 0.3);
+    box-shadow: 0 5px 15px rgba(187, 98, 238, 0.3);
 }
 
 .btn-favorito {
@@ -362,8 +362,8 @@ a {
     padding: 8px 16px;
     border: none;
     border-radius: 18px;
-    background: linear-gradient(90deg, #EE62A9 20%, #FFC700 100%);
-    color: #000;
+    background: linear-gradient(90deg, #3A205C 25.96%, #9909FF 100%);
+    color: #ffffff;
     font-weight: 700;
     cursor: pointer;
 }
