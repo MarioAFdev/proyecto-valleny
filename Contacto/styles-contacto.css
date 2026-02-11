@@ -252,3 +252,29 @@
 
 
 
+
+.icon-sprite {
+    background-image: url('../images/spritesheet.png');
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    transition: transform 0.3s ease;
+    vertical-align: middle;
+}
+
+.icon-facebook {
+    background-position: -5px 0px;
+}
+
+.icon-instagram {
+    background-position: -83px -1px;
+}
+
+.icon-twitter {
+    background-position: -180px -7px;
+}
+
+.icon-sprite:hover {
+    transform: scale(1.1);
+}
