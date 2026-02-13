@@ -183,6 +183,7 @@
     text-decoration: none;
     color: inherit;
     animation: slideUp 0.6s ease-out forwards;
+    will-change: transform, opacity;
 }
 
 .entrada:hover {
@@ -311,6 +312,7 @@ a {
     display: flex;
     flex-direction: column;
     text-decoration: none;
+    will-change: transform, opacity;
 }
 
 .carta-card:hover {
