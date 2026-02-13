@@ -30,7 +30,9 @@ body {
   background-color: #20042C;
   color: #fffffff2;
   font-family: "droidsans";
-  animation: fadeIn 1s ease-out;
+  /*esto es para la animacion de las paginas*/
+  animation: fadeIn 1.2s ease-in-out;
+  animation-fill-mode: backwards;
 }
 
 .skipcontenido {
