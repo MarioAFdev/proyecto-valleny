@@ -151,6 +151,13 @@ h2 {
     text-align: left
 }
 
+.event:hover {
+    border-color: #ee62a9;
+    transform: translateY(-8px);
+    transform: scale(1.05);
+    box-shadow: 0 15px 40px rgba(238, 98, 169, 0.2);
+}
+
 .poster img {
     width: 100%;
     display: block;
