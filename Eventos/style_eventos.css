@@ -251,6 +251,16 @@ h2 {
     margin-top: 18px
 }
 
+.btn-bordered {
+    transition: all 0.3s ease;
+}
+
+.btn-bordered:hover {
+    cursor: pointer;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(238, 98, 169, 0.5);
+}
+
 /* FOOTER */
 
 .footer {
