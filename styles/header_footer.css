@@ -44,7 +44,8 @@
     background: linear-gradient(90deg, #ee62a9 20%, #ffc700);
     color: #000;
     text-decoration: none;
-    font-weight: 600
+    font-weight: 600;
+    transition: all 0.3s ease;
 }
 
 .btn-login:hover {
