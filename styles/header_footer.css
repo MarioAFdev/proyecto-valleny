@@ -47,6 +47,11 @@
     font-weight: 600
 }
 
+.btn-login:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(238, 98, 169, 0.5);
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;

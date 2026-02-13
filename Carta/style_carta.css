@@ -387,3 +387,16 @@
     transform: scale(1.2);
     box-shadow: 0 0 8px var(--neon-pink);
 }
+
+.boton-morado:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(238, 98, 169, 0.5);
+}
+.btn-extra:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(238, 98, 169, 0.5);
+}
+.boton-QR:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(238, 98, 169, 0.5);
+}
