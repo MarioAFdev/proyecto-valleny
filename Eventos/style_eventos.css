@@ -174,7 +174,16 @@ h2 {
 .list-item {
     display: flex;
     gap: 18px;
-    align-items: flex-start
+    align-items: flex-start;
+    padding: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.06);
+    border-radius: 6px;
+}
+
+.list-item:hover {
+    border-color: #ee62a9;
+    box-shadow: 0 15px 40px rgba(238, 98, 169, 0.2);
+    transition: all 0.3s ease;
 }
 
 .thumb {
