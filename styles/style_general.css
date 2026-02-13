@@ -26,7 +26,7 @@
   font-style: normal;
 }
 
-body{
+body {
   background-color: #20042C;
   color: #fffffff2;
   font-family: "droidsans";
@@ -37,3 +37,6 @@ body{
   text-decoration: underline;
 }
 
+html {
+  scroll-behavior: smooth;
+}
