@@ -30,6 +30,7 @@ body {
   background-color: #20042C;
   color: #fffffff2;
   font-family: "droidsans";
+  animation: fadeIn 1s ease-out;
 }
 
 .skipcontenido {
@@ -39,4 +40,16 @@ body {
 
 html {
   scroll-behavior: smooth;
+}
+
+/*Slides de paginas suave*/
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
