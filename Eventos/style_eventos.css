@@ -65,7 +65,7 @@ h2 {
 .hero {
     position: relative;
     height: 260px;
-    background-image: url(/images/imagenes-eventos/hero-image.jpg);
+    background-image: url(../images/imagenes-eventos/hero-image.jpg);
     background-size: cover;
     background-position: center
 }
