@@ -1,7 +1,9 @@
 /* HEADER GLOBAL */
 body {
-    padding-top: 88px; /* La altura de tu header */
+    padding-top: 88px;
+    /* La altura de tu header */
 }
+
 .site-header .container {
     display: flex;
     align-items: center;
@@ -175,7 +177,30 @@ body {
     display: none;
 }
 
+
 @media (max-width: 768px) {
+
+    /* 1. Reducimos el espacio que ocupa el header en el cuerpo de la página */
+    body {
+        padding-top: 60px !important;
+    }
+
+    /* 2. Reducimos la altura visual del contenedor del header */
+    .site-header .container {
+        height: 60px !important;
+    }
+
+    /* 3. Reducimos el tamaño del logo solo en móvil */
+    .logo {
+        font-size: 28px !important;
+    }
+
+    /* 4. Ajustamos el menú desplegable para que empiece justo donde acaba el nuevo header */
+    .main-nav {
+        top: 60px !important;
+        height: calc(100vh - 60px) !important;
+    }
+
     .hamburger {
         display: flex;
         flex-direction: column;
