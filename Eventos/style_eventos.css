@@ -103,7 +103,14 @@ h2 {
     padding: 10px;
     border: 2px solid rgba(255, 255, 255, 0.06);
     border-radius: 6px;
-    text-align: left
+    text-align: left;
+}
+
+.event > div:first-child {
+    display: flex;
+    justify-content: center; 
+    width: 100%;
+    margin-bottom: 10px;
 }
 
 .event:hover {
@@ -156,6 +163,24 @@ h2 {
 
 .event-assistants .icon {
     width: 16px
+}
+.dots-eventos {
+    display: none; /* Oculto en escritorio y tablets (2+ columnas) */
+    justify-content: center;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.dots-eventos a {
+    width: 12px;
+    height: 12px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    transition: background 0.3s ease;
+}
+
+.dots-eventos a:hover {
+    background-color: #ee62a9; /* Color resaltado de tu tema */
 }
 
 /* TODOS LOS EVENTOS */
@@ -225,82 +250,113 @@ h2 {
     box-shadow: 0 6px 20px rgba(238, 98, 169, 0.5);
 }
 
-/* FOOTER */
+/* --- RESPONSIVE PARA EVENTOS --- */
 
-.footer {
-    color: #fff;
-    padding: 60px 10% 40px;
-    border-top: 1px solid #fff;
+@media (max-width: 992px) {
+    .hero-inner {
+        gap: 40px; /* Reducimos el espacio excesivo en tablets */
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
 }
 
-.footer-top {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 60px;
-    margin-bottom: 60px;
-    margin-left: 10%;
+@media (max-width: 768px) {
+    /* Ajustes del Hero */
+    .hero {
+        height: auto;
+        padding-bottom: 20px;
+    }
+
+    .hero-inner {
+        justify-content: center;
+        gap: 30px;
+        padding-top: 40px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    /* Filtros: los ponemos uno sobre otro para que no se amontonen */
+    .filters {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .filter-list {
+        justify-content: center;
+    }
+
+    /* Populares: 2 columnas en lugar de 4 */
+    .populares-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Lista de eventos: De horizontal a vertical */
+    .list-item {
+        flex-direction: column;
+    }
+
+    .thumb {
+        width: 100%;
+    }
+
+    .thumb img {
+        height: 200px;
+        object-fit: cover; /* Evita que la imagen se deforme al ser ancha */
+    }
 }
 
-.footer-col h4 {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-}
+@media (max-width: 480px) {
+    /* Populares: 1 sola columna en móviles pequeños */
+    .populares-grid {
+        grid-template-columns: 1fr;
+    }
 
-.footer-col ul {
-    list-style: none;
-    padding: 0;
-}
+    .hero h1 {
+        font-size: 28px;
+    }
 
-.footer-col ul li {
-    margin-bottom: 10px;
-}
+    .filter-actions {
+        width: 100%;
+        justify-content: center;
+    }
 
-.footer-col a {
-    color: #fff;
-    text-decoration: none;
-    opacity: 0.9;
-}
+    .btn-bordered {
+        padding: 6px 14px;
+        font-size: 14px;
+    }
 
-.footer-col a:hover {
-    opacity: 1;
-}
+    /* Ajuste de márgenes de secciones */
+    .populares, .todos-eventos {
+        padding: 20px 10px;
+    }
 
-.footer-bottom {
-    text-align: center;
-}
+    /* Activamos el comportamiento de slider horizontal */
+    .populares-grid {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        gap: 15px;
+        scrollbar-width: none; /* Oculta scroll en Firefox */
+    }
 
-.footer-logo {
-    font-family: "valleny";
-    font-size: 3rem;
-    margin-bottom: 10px;
-}
+    .populares-grid::-webkit-scrollbar {
+        display: none; /* Oculta scroll en Chrome/Safari */
+    }
 
-.footer-bottom p {
-    font-size: 0.9rem;
-    opacity: 0.8;
-}
+    .enlace-article {
+        flex: 0 0 100%; /* Una sola card por pantalla */
+        scroll-snap-align: center;
+    }
 
-.resaltado {
-    color: #EE62A9;
-}
-
-.footer-contacto .contact-item {
-    display: flex;
-    align-items: flex-start;
-    margin-bottom: 20px;
-}
-
-.footer-icon {
-    width: 20px;
-    margin-right: 15px;
-}
-
-.contact-text {
-    display: flex;
-    flex-direction: column;
-
-}
-
-.resaltado {
-    margin-top: -30px;
+    /* MOSTRAR PUNTOS: Solo se ejecutan en este tamaño de pantalla */
+    .dots-eventos {
+        display: flex; 
+    }
 }
