@@ -185,7 +185,7 @@ body {
 }
 
 .btn-login:hover {
-  transform: translateY(-3px);
+  transform: scale(1.05);
   box-shadow: 0 6px 20px rgba(238, 98, 169, 0.5);
 }
 
