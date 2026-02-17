@@ -112,7 +112,7 @@
 
 .slider-nav {
     display: flex;
-    column-gap: 2rem;
+    column-gap: 0.75rem;
     position: absolute;
     bottom: 1.25rem;
     left: 50%;
@@ -121,8 +121,8 @@
 }
 
 .slider-nav a {
-    width: 1.7rem;
-    height: 1.7rem;
+    width: 1.1rem;
+    height: 1.71em;
     border-radius: 50%;
     background-color: white;
     opacity: .75;
@@ -131,7 +131,7 @@
 
 .slider-nav a:hover {
     opacity: 1;
-    background: linear-gradient(90deg, #ee62a9 20%, #ffc700 100%);
+    background-color:#ee62a9;
 }
 
 .enlace {
