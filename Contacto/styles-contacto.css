@@ -278,3 +278,96 @@
 .icon-sprite:hover {
     transform: scale(1.1);
 }
+
+
+/* --- RESPONSIVE CONTACTO CORREGIDO --- */
+
+@media (max-width: 768px) {
+
+    /* 1. Contenedor principal: sigue siendo columna */
+    .seccion-contacto {
+        display: flex;
+        flex-direction: column;
+        padding: 40px 5%;
+        gap: 40px;
+    }
+
+    /* 2. Forzamos que la primera columna (textos e iconos) 
+       permita reordenar sus elementos internos */
+    .seccion-contacto .col:first-child {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    /* 3. Reordenamiento visual mediante Flexbox */
+    /* Texto (Preguntas/Respuestas) va primero */
+    .preguntas,
+    .respuestas {
+        order: 1;
+        text-align: left;
+
+        /* Alineado a la izquierda */
+        br {
+            display: none;
+        }
+
+        /* Quitamos saltos manuales */
+    }
+
+    /* Movemos el formulario (que es la segunda .col) visualmente después del texto */
+    .seccion-contacto .col:last-child {
+        order: 2;
+        width: 100%;
+    }
+
+    /* Movemos los iconos y RRSS al final de todo */
+    .seccion-iconos {
+        order: 3;
+        margin-top: 20px;
+        justify-content: flex-start;
+        /* Alineado a la izquierda */
+        padding-left: 0;
+    }
+
+    .RRSS {
+        order: 4;
+        text-align: left;
+        /* Alineado a la izquierda */
+        margin-top: 30px;
+    }
+
+    .iconos-rrss {
+        justify-content: flex-start;
+        /* Iconos a la izquierda */
+        gap: 20px;
+    }
+
+    /* --- AJUSTES DE DISEÑO --- */
+
+    .seccion-titular {
+        padding-top: 100px;
+        height: auto;
+        min-height: 200px;
+    }
+
+    .titulo {
+        font-size: 32px;
+    }
+
+    /* El formulario se ve mejor con un poco de aire */
+    .formulario-contacto {
+        gap: 15px;
+    }
+
+    .boton-enviar {
+        max-width: 100%;
+        width: 100%;
+        /* Botón grande para móvil */
+    }
+
+    /* Mapa más pequeño */
+    .seccion-mapa iframe {
+        height: 300px;
+    }
+}
