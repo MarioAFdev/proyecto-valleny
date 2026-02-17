@@ -114,6 +114,7 @@ h2 {
     inset: 0;
     background: linear-gradient(180deg, rgba(32, 4, 44, 0.45), rgba(32, 4, 44, 0.65))
 }
+
 /* Sección Tickets */
 .tickets-section {
     padding: 60px 177px;
@@ -440,3 +441,155 @@ h2 {
 }
 
 
+/* --- RESPONSIVE DESIGN (MÓVIL) --- */
+@media (max-width: 768px) {
+
+    /* 1. Ajustes Generales y Hero */
+    body {
+        padding-top: 60px !important;
+    }
+
+    .site-header .container {
+        height: 60px !important;
+    }
+
+    .evento-titulo {
+        padding: 30px 20px !important;
+    }
+
+    .titulo-evento {
+        font-size: 28px !important;
+        margin: 15px 0;
+    }
+
+    .titulo-info {
+        gap: 20px !important;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .info-label {
+        font-size: 14px !important;
+    }
+
+    .info-value {
+        font-size: 18px !important;
+    }
+
+    .info-value-hora {
+        font-size: 14px !important;
+    }
+
+    /* 2. Sección Tickets */
+    .tickets-section {
+        padding: 40px 20px !important;
+    }
+
+    .section-title {
+        font-size: 24px !important;
+        margin-bottom: 20px;
+    }
+
+    .ticket-option {
+        padding: 0 20px !important;
+        font-size: 14px !important;
+        height: 50px !important;
+    }
+
+    .ticket-controls {
+        flex-direction: row !important;
+        gap: 30px !important;
+        justify-content: center;
+    }
+
+    /* 3. Sección Información */
+    .info-section {
+        padding: 40px 20px !important;
+    }
+
+    .info-header,
+    .info-content,
+    .info-body {
+        flex-direction: column !important;
+        gap: 20px !important;
+        align-items: flex-start !important;
+    }
+
+    .info-text p {
+        font-size: 16px !important;
+    }
+
+    .info-image {
+        max-width: 100% !important;
+        order: -1;
+        /* Imagen encima del texto en móvil */
+    }
+
+    /* 4. CARRUSEL (Un evento a la vez) */
+    .eventos-relacionados {
+        padding: 40px 0 !important;
+        /* Sin padding lateral para el scroll total */
+    }
+
+    .eventos-grid {
+        display: flex !important;
+        flex-direction: row !important;
+        overflow-x: auto !important;
+        scroll-snap-type: x mandatory;
+        gap: 0 !important;
+        /* Sin espacio entre tarjetas para que encajen al 100% */
+        padding: 0 !important;
+        scroll-behavior: smooth;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    /* Ocultar barra de scroll */
+    .eventos-grid::-webkit-scrollbar {
+        display: none;
+    }
+
+    .evento-card {
+        flex: 0 0 100% !important;
+        /* Ocupa todo el ancho de la pantalla */
+        width: 100% !important;
+        scroll-snap-align: start;
+        box-sizing: border-box;
+        padding: 0 20px;
+        /* El margen visual se da por dentro de la card */
+    }
+
+    .card-image {
+        width: 100%;
+        height: auto;
+    }
+
+    /* 5. DOTS (Puntos de navegación) */
+    .dots-movil {
+        display: flex !important;
+        justify-content: center;
+        gap: 12px;
+        margin-top: 15px;
+        padding-bottom: 20px;
+    }
+
+    .dots-movil a {
+        width: 12px;
+        height: 12px;
+        background-color: #555;
+        border-radius: 50%;
+        text-decoration: none;
+        transition: background 0.3s, transform 0.2s;
+    }
+
+    .dots-movil a:active,
+    .dots-movil a:focus {
+        background-color: hsl(330, 80%, 66%);
+        transform: scale(1.2);
+    }
+}
+
+/* --- ESTADO ESCRITORIO --- */
+.dots-movil {
+    display: none;
+    /* Ocultos siempre en PC */
+}
