@@ -1,10 +1,26 @@
 /* HEADER GLOBAL */
-
+body {
+    padding-top: 88px; /* La altura de tu header */
+}
 .site-header .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 88px
+}
+
+.site-header {
+    background-color: #1a0221;
+    /* El mismo fondo oscuro del menú */
+    position: fixed;
+    /* Se queda fijo al hacer scroll */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    /* Asegura que siempre esté por encima del contenido */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    /* Opcional: línea sutil de separación */
 }
 
 .logo {
@@ -151,4 +167,125 @@
 
 .footer-titular {
     font-size: 24px;
+}
+
+
+/*Responsive*/
+.menu-toggle {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        cursor: pointer;
+        z-index: 100;
+    }
+
+    .hamburger span {
+        display: block;
+        width: 30px;
+        height: 3px;
+        background-color: white;
+        border-radius: 2px;
+        transition: 0.3s;
+    }
+
+    .main-nav {
+        position: fixed;
+        /* Cambiado de absolute a fixed para mayor estabilidad en móvil */
+        top: 88px;
+        left: 0;
+        width: 100%;
+        background-color: #1a0221;
+        display: none;
+        padding: 20px 0;
+        border-bottom: 2px solid #ee62a9;
+        /* Un toque de color neón al abrirlo */
+        height: calc(100vh - 88px);
+        /* Opcional: hace que el menú ocupe el resto de la pantalla */
+        overflow-y: auto;
+    }
+
+    .main-nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    /* Mostrar menú cuando el checkbox esté marcado */
+    .menu-toggle:checked~.main-nav {
+        display: block;
+    }
+
+    /* Ocultar el botón de login en móvil o moverlo dentro */
+    .btn-login {
+        display: none;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    .footer {
+        padding: 20px 0;
+    }
+
+    .footer-top {
+        grid-template-columns: 1fr;
+        /* Una sola columna */
+        gap: 0;
+    }
+
+    .footer-col {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        padding: 15px 20px;
+    }
+
+    /* Estilo para los títulos con flecha */
+    .footer-titular {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 18px;
+        margin-bottom: 0;
+    }
+
+    /* Flecha (usando CSS puro) */
+    .footer-titular::after {
+        content: '';
+        width: 0;
+        height: 0;
+        border-left: 6px solid transparent;
+        border-right: 6px solid transparent;
+        border-top: 6px solid white;
+        /* Flecha hacia abajo */
+    }
+
+    /* La primera columna está abierta en tu imagen, la flecha va hacia arriba */
+    .footer-col:first-child .footer-titular::after {
+        border-top: none;
+        border-bottom: 6px solid white;
+    }
+
+    /* Ocultar listas excepto la primera para imitar el diseño de "acordeón" */
+    /* .footer-col:not(:first-child) ul,
+    .footer-col:not(:first-child) .contact-item {
+        display: none;
+    } */
+
+    .footer-contacto {
+        border-bottom: none;
+    }
+
+    .footer-logo {
+        font-size: 2.5rem;
+    }
+
+    .resaltado {
+        margin-top: 0;
+        /* Corregimos el margen negativo en móvil */
+    }
 }
