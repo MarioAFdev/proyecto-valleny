@@ -1,0 +1,421 @@
+@font-face {
+  font-family: "valleny";
+  src: url("../fonts/Valleny.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "droidsans";
+  src: url("../fonts/droid-sans/DroidSans.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "piazzola";
+  src: url("../fonts/Piazzolla/static/Piazzolla_24pt-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "valleny";
+  src: url("../fonts/Valleny.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* ----------------- RESET ------------------ */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* ------------------------------------------ */
+
+body {
+  background-color: #20042C;
+  color: #fffffff2;
+  font-family: "droidsans";
+  /*esto es para la animacion de las paginas*/
+  animation: fadeIn 1.2s ease-in-out;
+  animation-fill-mode: backwards;
+}
+
+.skipcontenido {
+  padding-left: 20px;
+  text-decoration: underline;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/*Slides de paginas suave*/
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/*-------------------- HEADER FOOTER --------------------*/
+/* HEADER GLOBAL */
+body {
+  padding-top: 88px;
+  /* La altura de tu header */
+}
+
+.site-header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 88px
+}
+
+.site-header {
+  background-color: #1a0221;
+  /* El mismo fondo oscuro del menú */
+  position: fixed;
+  /* Se queda fijo al hacer scroll */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  /* Asegura que siempre esté por encima del contenido */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  /* Opcional: línea sutil de separación */
+}
+
+.logo {
+  font-family: "valleny";
+  font-size: 48px;
+  color: #fff;
+  text-decoration: none
+}
+
+.logo a {
+  color: white;
+  text-decoration: none;
+}
+
+.main-nav ul {
+  display: flex;
+  gap: 28px;
+  list-style: none;
+  margin: 0;
+  padding: 0
+}
+
+.main-nav a {
+  color: #fff;
+  text-decoration: underline;
+  text-underline-offset: 6px;
+  font-size: 18px
+}
+
+.main-nav a.active {
+  color: #ee62a9;
+}
+
+.btn-login {
+  padding: 10px 22px;
+  border-radius: 25px;
+  background: linear-gradient(90deg, #ee62a9 20%, #ffc700);
+  color: #000;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-login:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(238, 98, 169, 0.5);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* FOOTER GLOBAL*/
+
+.footer {
+  color: #fff;
+  padding: 60px 40px 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  border-top: 1px solid #fff;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.footer-top {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 60px;
+  margin-bottom: 60px;
+  margin-left: 0;
+
+}
+
+.footer-col h4 {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 10px;
+}
+
+.footer-col a {
+  color: #fff;
+  text-decoration: none;
+  opacity: 0.9;
+}
+
+.footer-col a:hover {
+  opacity: 1;
+}
+
+.footer-bottom {
+  text-align: center;
+}
+
+.footer-logo {
+  font-family: "valleny";
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.footer-bottom p {
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+.resaltado {
+  color: #EE62A9;
+}
+
+.footer-contacto .contact-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.footer-icon {
+  width: 20px;
+  margin-right: 15px;
+}
+
+.footer-icon:hover {
+  transform: rotate(15deg);
+  transition: transform 0.3s ease;
+}
+
+.contact-text {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.resaltado {
+  margin-top: -30px;
+}
+
+.footer-titular {
+  font-size: 24px;
+}
+
+
+/*Responsive*/
+.menu-toggle {
+  display: none;
+}
+
+
+@media (max-width: 768px) {
+
+  body {
+    padding-top: 60px !important;
+  }
+
+  .site-header .container {
+    height: 60px !important;
+  }
+
+  .logo {
+    font-size: 28px !important;
+  }
+
+  .main-nav {
+    top: 60px !important;
+    height: calc(100vh - 60px) !important;
+  }
+
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    z-index: 100;
+  }
+
+  .hamburger span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    border-radius: 2px;
+    transition: 0.3s;
+  }
+
+  .main-nav {
+    position: fixed;
+    top: 88px;
+    left: 0;
+    width: 100%;
+    background-color: #1a0221;
+    display: none;
+    padding: 20px 0;
+    border-bottom: 2px solid #ee62a9;
+    height: calc(100vh - 88px);
+    overflow-y: auto;
+  }
+
+  .main-nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .menu-toggle:checked~.main-nav {
+    display: block;
+  }
+
+  .btn-login {
+    display: none;
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 20px 0;
+  }
+
+  .footer-top {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .footer-col {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 15px 20px;
+  }
+
+  .footer-titular {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    margin-bottom: 0;
+  }
+
+  .footer-titular::after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid white;
+  }
+
+  .footer-col:first-child .footer-titular::after {
+    border-top: none;
+    border-bottom: 6px solid white;
+  }
+
+  /* Ocultar listas excepto la primera para imitar el diseño de "acordeón" */
+  /* .footer-col:not(:first-child) ul,
+    .footer-col:not(:first-child) .contact-item {
+        display: none;
+    } */
+
+  .footer-contacto {
+    border-bottom: none;
+  }
+
+  .footer-logo {
+    font-size: 2.5rem;
+  }
+
+  .resaltado {
+    margin-top: 0;
+  }
+}
+
+/* ---------------------------------------------------------------------*/
