@@ -375,3 +375,89 @@
 }
 
 
+/* --- RESPONSIVE HOME (MÓVIL - DISEÑO VERTICAL) --- */
+@media (max-width: 768px) {
+
+    .logo.active {
+        font-size: 36px;
+    }
+
+    /* 2. Carrusel Principal (Hero) */
+    /* Lo mantenemos como carrusel porque es tu estructura principal, 
+       pero ajustamos textos para que no se corten */
+    .seccion-carrusel {
+        max-height: 450px;
+    }
+
+    .slider>div h1 {
+        font-size: 22px !important;
+        top: 10% !important;
+        width: 85%;
+        padding: 10px;
+    }
+
+    .slider-nav a {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background-color: white;
+        opacity: .75;
+        transition: all 2s;
+    }
+
+    .seccion-galeria {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        background: linear-gradient(180deg, rgba(31, 0, 51, 0.8) 0%, rgba(51, 10, 76, 0.9) 100%);
+    }
+
+    .seccion-galeria .titulo {
+        font-family: Piazzolla;
+        font-size: 2.5rem;
+        color: #fff;
+        font-weight: 700;
+        display: inline-block;
+        position: relative;
+        text-decoration: none;
+    }
+
+    /* Subrayado terrorista poniendo un elemento por debajo */
+    .seccion-galeria .titulo::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        width: 100%;
+        background: linear-gradient(90deg, #ee62a9 20%, #ffc700 100%);
+        border-radius: 4px;
+    }
+
+    .contenedor-galeria {
+        width: 110%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .contenedor-galeria img {
+        height:300px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    /* 6. Newsletter */
+    .newsletter-form {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .newsletter-btn {
+        width: 100%;
+        /* Botón ancho para pulsar fácil */
+        border-radius: 25px;
+        height: 45px;
+    }
+}
