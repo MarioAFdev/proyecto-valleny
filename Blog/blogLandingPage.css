@@ -47,7 +47,7 @@
 }
 
 /* Estilo para el enlace contenedor */
-.blog-principal > a {
+.blog-principal>a {
     display: flex;
     align-items: center;
     gap: 40px;
@@ -114,8 +114,8 @@
 }
 
 .heart-icon {
-  color: #ff8a00;
-  font-size: 0.8rem;
+    color: #ff8a00;
+    font-size: 0.8rem;
 }
 
 /* --- 3. SECCIÓN REJILLA (GRID) --- */
@@ -180,7 +180,8 @@
 .caja-info {
     padding: 25px;
     display: flex;
-    align-items: center; /* Centrado vertical del icono y texto */
+    align-items: center;
+    /* Centrado vertical del icono y texto */
     color: #fff;
     flex-grow: 1;
 }
@@ -253,4 +254,110 @@
 .btn-cargar-grande:hover {
     transform: translateY(-3px);
     box-shadow: 0 6px 20px rgba(238, 98, 169, 0.5);
+}
+
+
+/* =========================================
+   RESPONSIVE BLOG LANDING PAGE
+   ========================================= */
+
+@media (max-width: 1024px) {
+
+    /* La rejilla pasa de 3 a 2 columnas en tablets */
+    .grid-blog {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .blog-principal>a {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* --- 1. BANNER --- */
+    .banner-BlogLandingPage {
+        height: 250px;
+    }
+
+    .banner-BlogLandingPage h1 {
+        font-size: 3rem;
+    }
+
+    /* --- 2. POST PRINCIPAL (DE HORIZONTAL A VERTICAL) --- */
+    .blog-principal {
+        padding: 0;
+        /* Quitamos padding para que la imagen llegue al borde */
+        overflow: hidden;
+    }
+
+    .blog-principal>a {
+        flex-direction: column;
+        /* Apilamos imagen arriba y texto abajo */
+        gap: 0;
+    }
+
+    .imagen-blogprincipal {
+        max-width: 100%;
+        width: 100%;
+        flex: none;
+    }
+
+    .imagen-blogprincipal img {
+        border-radius: 0;
+        /* Imagen recta arriba para encajar con el borde */
+        height: 250px;
+    }
+
+    .destacado-texto {
+        padding: 25px;
+    }
+
+    .destacado-texto h3 {
+        font-size: 1.8rem;
+    }
+
+    /* --- 3. REJILLA DE POSTS (1 COLUMNA) --- */
+    .grid-blog {
+        grid-template-columns: 1fr;
+        /* Un post por fila */
+        width: 90%;
+    }
+
+    .grid-blog article {
+        max-width: 450px;
+        /* Evitamos que crezcan demasiado a lo ancho */
+        margin: 0 auto;
+    }
+
+    /* --- 4. ICONO GUARDAR --- */
+    .icono-guardar img {
+        margin-top: 0;
+        /* Corregimos el margen que tenías en desktop */
+    }
+
+    /* --- 5. BOTÓN CARGAR MÁS --- */
+    .btn-cargar-grande {
+        width: 90%;
+        padding: 15px 0;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner-BlogLandingPage h1 {
+        font-size: 2.5rem;
+    }
+
+    .destacado-texto h3 {
+        font-size: 1.5rem;
+    }
+
+    .meta-inferior {
+        flex-direction: column;
+        /* Metadatos uno debajo de otro */
+        gap: 8px;
+        align-items: flex-start;
+    }
 }
