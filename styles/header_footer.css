@@ -180,22 +180,18 @@ body {
 
 @media (max-width: 768px) {
 
-    /* 1. Reducimos el espacio que ocupa el header en el cuerpo de la página */
     body {
         padding-top: 60px !important;
     }
 
-    /* 2. Reducimos la altura visual del contenedor del header */
     .site-header .container {
         height: 60px !important;
     }
 
-    /* 3. Reducimos el tamaño del logo solo en móvil */
     .logo {
         font-size: 28px !important;
     }
 
-    /* 4. Ajustamos el menú desplegable para que empiece justo donde acaba el nuevo header */
     .main-nav {
         top: 60px !important;
         height: calc(100vh - 60px) !important;
@@ -220,7 +216,6 @@ body {
 
     .main-nav {
         position: fixed;
-        /* Cambiado de absolute a fixed para mayor estabilidad en móvil */
         top: 88px;
         left: 0;
         width: 100%;
@@ -228,9 +223,7 @@ body {
         display: none;
         padding: 20px 0;
         border-bottom: 2px solid #ee62a9;
-        /* Un toque de color neón al abrirlo */
         height: calc(100vh - 88px);
-        /* Opcional: hace que el menú ocupe el resto de la pantalla */
         overflow-y: auto;
     }
 
@@ -240,12 +233,10 @@ body {
         gap: 20px;
     }
 
-    /* Mostrar menú cuando el checkbox esté marcado */
     .menu-toggle:checked~.main-nav {
         display: block;
     }
 
-    /* Ocultar el botón de login en móvil o moverlo dentro */
     .btn-login {
         display: none;
     }
@@ -260,7 +251,6 @@ body {
 
     .footer-top {
         grid-template-columns: 1fr;
-        /* Una sola columna */
         gap: 0;
     }
 
@@ -269,7 +259,6 @@ body {
         padding: 15px 20px;
     }
 
-    /* Estilo para los títulos con flecha */
     .footer-titular {
         display: flex;
         justify-content: space-between;
@@ -278,7 +267,6 @@ body {
         margin-bottom: 0;
     }
 
-    /* Flecha (usando CSS puro) */
     .footer-titular::after {
         content: '';
         width: 0;
@@ -286,10 +274,8 @@ body {
         border-left: 6px solid transparent;
         border-right: 6px solid transparent;
         border-top: 6px solid white;
-        /* Flecha hacia abajo */
     }
 
-    /* La primera columna está abierta en tu imagen, la flecha va hacia arriba */
     .footer-col:first-child .footer-titular::after {
         border-top: none;
         border-bottom: 6px solid white;
@@ -311,6 +297,5 @@ body {
 
     .resaltado {
         margin-top: 0;
-        /* Corregimos el margen negativo en móvil */
     }
 }
