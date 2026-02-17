@@ -20,7 +20,7 @@ h2 {
 
 .hero {
     position: relative;
-    height: 260px;
+    height: 320px;
     background-image: url(../images/imagenes-eventos/hero-image.jpg);
     background-size: cover;
     background-position: center
@@ -58,7 +58,6 @@ h2 {
     align-items: center;
     justify-content: space-between;
     margin-top: 18px;
-    background-color: #20042C
 }
 
 .filter-list {
