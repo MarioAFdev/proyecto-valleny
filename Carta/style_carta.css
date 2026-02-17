@@ -395,11 +395,134 @@
     transform: translateY(-3px);
     box-shadow: 0 6px 20px rgba(238, 98, 169, 0.5);
 }
+
 .btn-extra:hover {
     transform: translateY(-3px);
     box-shadow: 0 6px 20px rgba(238, 98, 169, 0.5);
 }
+
 .boton-QR:hover {
     transform: translateY(-3px);
     box-shadow: 0 6px 20px rgba(238, 98, 169, 0.5);
+}
+
+
+
+
+/* --- RESPONSIVE DESIGN --- */
+
+@media (max-width: 1024px) {
+    .seccion-cocteles {
+        padding: 40px 20px;
+    }
+
+    .seccion-cocteles-info,
+    .seccion-cocteles-info:nth-child(odd) {
+        flex-direction: column;
+        /* Apilamos imagen y texto */
+        text-align: center;
+        gap: 20px;
+    }
+
+    .info-coctel {
+        width: 100%;
+    }
+
+    .coctel-fondo {
+        padding: 40px 20px;
+        min-height: auto;
+        /* Dejamos que el contenido dicte la altura */
+    }
+
+    .contenido-coctel {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .info-izquierda,
+    .info-derecha {
+        width: 100%;
+        max-width: 500px;
+    }
+}
+
+@media (max-width: 768px) {
+    .titulo {
+        font-size: 32px;
+    }
+
+    .titular {
+        font-size: 28px;
+        padding: 20px;
+    }
+
+    /* Carrusel de Favoritos */
+    .card {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .card-image img {
+        width: 100%;
+        height: auto;
+    }
+
+    .card-content {
+        padding-left: 0;
+        padding-top: 20px;
+    }
+
+    .card-content h3 {
+        margin-top: 0;
+    }
+
+    /* Botones de selección de cóctel ideal */
+    .botones-preguntas {
+        gap: 10px;
+    }
+
+    .boton {
+        width: 45%;
+        /* Dos botones por fila en móvil */
+        height: auto;
+        aspect-ratio: 1 / 1;
+    }
+
+    .boton span {
+        font-size: 0.8rem;
+    }
+
+    .imagen-info {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .titulo {
+        font-size: 24px;
+    }
+
+    .preguntas {
+        font-size: 1.5rem;
+    }
+
+    .coctel-fondo .nombre-coctel {
+        font-size: 2.5rem;
+    }
+
+    .subtitulo {
+        font-size: 1.2rem;
+    }
+
+    .accion-qr {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .boton-QR {
+        width: 100%;
+    }
 }
