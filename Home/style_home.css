@@ -581,11 +581,20 @@ a {
         padding: 10px;
     }
 
-    .slider>div p {
-        font-size: 14px !important;
-        top: 35% !important;
-        padding: 0 15px;
-        max-width: 90%;
+   .slider > div p {
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        width: 85%;
+        transform: translateX(-50%);
+        font-family: Piazzolla;
+        color: #fff;
+        font-family: Arial, sans-serif;
+        font-size: 10px;
+        line-height: 1.5;
+        text-align: center;
+        max-width: 768px;
+        z-index: 2;
     }
 
     .slider-nav a {
