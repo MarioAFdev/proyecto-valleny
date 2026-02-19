@@ -1,140 +1,21 @@
 
-/* HEADER GLOBAL */
-
-.header {
+.seccion-titular {
+    position: relative;
+    height: 320px;
+    background-image: url("../images/imagenes-galeria/header.jpg");
+    background-size: cover;
+    background-position: center;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 14px 50px;
-}
-
-.logo {
-    color: white;
-    font-size: 30px;
-    font-family: Georgia, serif;
-}
-
-
-.right {
-    display: flex;
-    align-items: center;
-    gap: 30px;
-}
-
-
-.nav {
-    display: flex;
-    gap: 25px;
-}
-
-.nav a {
-    color: white;
-    text-decoration: none;
-    font-size: 14px;
-}
-
-.btn-login {
-    color: black;
-    padding: 8px 18px;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 25px;
-    background: var(--grediente-rosa, linear-gradient(90deg, #EE62A9 20.19%, #FFC700 100%));
-}
-
-/* CARRUSEL DIABLO */
-
-.seccion-carrusel {
-    position: relative;
-    width: 100%;
-    height: auto;
-    max-height: 640px;
-    margin: 0 auto;
-    overflow: hidden;
-}
-
-.slider {
-    display: flex;
-    width: 100%;
-    height: 100%;
-    overflow-x: hidden;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-}
-
-
-.slider > div{
-    min-width: 100%;
-    aspect-ratio: 16 / 9;
-    scroll-snap-align: start;
-    position: relative;
-}
-
-.slider > div h1 {
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translateX(-50%);
-    color: #fff;
-    font-family: "piazzola";
-    font-size: 70px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    text-transform: uppercase;
+    justify-content: center;
     text-align: center;
-    padding: 40px;
-    z-index: 2;
 }
 
-.slider > div p {
-    position: absolute;
-    top: 35%;
-    left: 50%;
-    transform: translateX(-50%);
+.titular {
     font-family: "piazzola";
-    color: #fff;
-    font-size: 18px;
-    line-height: 1.5;
-    text-align: center;
-    max-width: 600px;
-    z-index: 2;
-}
-
-.slider div img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-    filter: brightness(50%);
-}
-
-.slider-nav {
-    display: flex;
-    column-gap: 2rem;
-    position: absolute;
-    bottom: 1.25rem;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 1;
-}
-
-.slider-nav a {
-    width: 1.7rem;
-    height: 1.7rem;
-    border-radius: 50%;
-    background-color: white;
-    opacity: .75;
-    transition: all 2s;
-}
-
-.slider-nav a:hover {
-    opacity: 1;
-    background: linear-gradient(90deg, #ee62a9 20%, #ffc700 100%);
-}
-
-.enlace {
-    color: #EE62A9;
+    font-size: 48px;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
 }
 
 /* SECCIÓN VIDEO */
