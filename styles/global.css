@@ -418,4 +418,27 @@ body {
   }
 }
 
+/* Enlace de accesibilidad para saltar al contenido */
+.skip-link {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1001;
+  color: white;
+  text-decoration: underline;
+  background-color: #1a0221; /* Mismo fondo que el header */
+  padding: 8px 16px;
+  /* Ocultar visualmente hasta que se enfoque */
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.skip-link:focus {
+  /* Mostrar al recibir foco */
+  clip: auto;
+  overflow: visible;
+  outline: 2px solid #fff; /* Añadir outline para accesibilidad */
+}
+
 /* ---------------------------------------------------------------------*/
