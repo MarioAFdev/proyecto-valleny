@@ -275,6 +275,17 @@
     cursor: pointer;
     transition: all 0.3s ease;
 }
+.boton-pedir {
+    padding: 12px 24px;
+    border-radius: 25px;
+    border: none;
+    background: linear-gradient(90deg, hsl(330, 80%, 66%) 20%, hsl(47, 100%, 50%) 100%);
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
 
 .nota {
     color: #FFF;
