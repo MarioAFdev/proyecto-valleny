@@ -419,7 +419,6 @@
     .seccion-cocteles-info,
     .seccion-cocteles-info:nth-child(odd) {
         flex-direction: column;
-        /* Apilamos imagen y texto */
         text-align: center;
         gap: 20px;
     }
@@ -431,7 +430,6 @@
     .coctel-fondo {
         padding: 40px 20px;
         min-height: auto;
-        /* Dejamos que el contenido dicte la altura */
     }
 
     .contenido-coctel {
@@ -457,7 +455,6 @@
         padding: 20px;
     }
 
-    /* Carrusel de Favoritos */
     .card {
         flex-direction: column;
         text-align: center;
@@ -478,14 +475,12 @@
         margin-top: 0;
     }
 
-    /* Botones de selección de cóctel ideal */
     .botones-preguntas {
         gap: 10px;
     }
 
     .boton {
         width: 45%;
-        /* Dos botones por fila en móvil */
         height: auto;
         aspect-ratio: 1 / 1;
     }

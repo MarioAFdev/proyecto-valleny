@@ -125,21 +125,18 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
-    /* Espacio entre cada bloque de campo */
 }
 
 .campo {
     display: flex;
     flex-direction: column;
     gap: 8px;
-    /* Espacio entre el label y el input */
 }
 
 .campo label {
     color: white;
     font-size: 1.1rem;
     font-family: sans-serif;
-    /* O tu fuente .ttf */
 }
 
 .campo input,
@@ -306,13 +303,9 @@
     .respuestas {
         order: 1;
         text-align: left;
-
-        /* Alineado a la izquierda */
         br {
             display: none;
         }
-
-        /* Quitamos saltos manuales */
     }
 
     /* Movemos el formulario (que es la segunda .col) visualmente después del texto */
@@ -326,20 +319,17 @@
         order: 3;
         margin-top: 20px;
         justify-content: flex-start;
-        /* Alineado a la izquierda */
         padding-left: 0;
     }
 
     .RRSS {
         order: 4;
         text-align: left;
-        /* Alineado a la izquierda */
         margin-top: 30px;
     }
 
     .iconos-rrss {
         justify-content: flex-start;
-        /* Iconos a la izquierda */
         gap: 20px;
     }
 
@@ -355,7 +345,6 @@
         font-size: 32px;
     }
 
-    /* El formulario se ve mejor con un poco de aire */
     .formulario-contacto {
         gap: 15px;
     }
@@ -363,10 +352,8 @@
     .boton-enviar {
         max-width: 100%;
         width: 100%;
-        /* Botón grande para móvil */
     }
 
-    /* Mapa más pequeño */
     .seccion-mapa iframe {
         height: 300px;
     }
