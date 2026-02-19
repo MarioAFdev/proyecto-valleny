@@ -344,6 +344,124 @@
 
     </footer>
 
+    <!-- Overlay para oscurecer el fondo -->
+    <div id="filter-overlay" class="filter-overlay"></div>
+
+    <!-- Panel de filtro por fecha -->
+    <div id="fecha-panel" class="filter-panel fecha-panel">
+        <div class="filter-panel-header">
+            <h3>Filtrar por Fecha</h3>
+            <button id="close-fecha" class="close-btn" aria-label="Cerrar filtro de fecha"></button>
+        </div>
+        <div class="filter-panel-content">
+            <label for="fecha-input">Selecciona una fecha:</label>
+            <input type="date" id="fecha-input" class="filtro-input">
+        </div>
+    </div>
+
+    <!-- Panel de filtro por género -->
+    <div id="genero-panel" class="filter-panel genero-panel">
+        <div class="filter-panel-header">
+            <h3>Filtrar por Género</h3>
+            <button id="close-genero" class="close-btn" aria-label="Cerrar filtro de género"></button>
+        </div>
+        <div class="filter-panel-content">
+            <ul class="generos-list">
+                <li>
+                    <input type="checkbox" id="jazz" name="genero" value="jazz">
+                    <label for="jazz">Jazz</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="rock" name="genero" value="rock">
+                    <label for="rock">Rock</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="dance" name="genero" value="dance">
+                    <label for="dance">Dance</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="techno" name="genero" value="techno">
+                    <label for="techno">Techno</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="soul" name="genero" value="soul">
+                    <label for="soul">Soul</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="country" name="genero" value="country">
+                    <label for="country">Country</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="pop" name="genero" value="pop">
+                    <label for="pop">Pop</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="alternativa" name="genero" value="alternativa">
+                    <label for="alternativa">Alternativa</label>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        // Elementos del DOM
+        const fechaBtn = document.querySelector('.filter-actions .btn-bordered:nth-child(1)');
+        const generoBtn = document.querySelector('.filter-actions .btn-bordered:nth-child(2)');
+        const overlay = document.getElementById('filter-overlay');
+        const fechaPanel = document.getElementById('fecha-panel');
+        const generoPanel = document.getElementById('genero-panel');
+        const closeFechaBtn = document.getElementById('close-fecha');
+        const closeGeneroBtn = document.getElementById('close-genero');
+
+        // Función para abrir panel
+        function openPanel(panel) {
+            panel.classList.add('active');
+            overlay.classList.add('active');
+            document.body.style.overflow = 'hidden'; // Evitar scroll al fondo
+        }
+
+        // Función para cerrar panel
+        function closePanel(panel) {
+            panel.classList.remove('active');
+            overlay.classList.remove('active');
+            document.body.style.overflow = 'auto'; // Restaurar scroll
+        }
+
+        // Event listeners para los botones de abrir
+        fechaBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            openPanel(fechaPanel);
+        });
+
+        generoBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            openPanel(generoPanel);
+        });
+
+        // Event listeners para los botones de cerrar
+        closeFechaBtn.addEventListener('click', function() {
+            closePanel(fechaPanel);
+        });
+
+        closeGeneroBtn.addEventListener('click', function() {
+            closePanel(generoPanel);
+        });
+
+        // Cerrar al hacer clic en el overlay
+        overlay.addEventListener('click', function() {
+            closePanel(fechaPanel);
+            closePanel(generoPanel);
+        });
+
+        // Cerrar con tecla ESC
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closePanel(fechaPanel);
+                closePanel(generoPanel);
+            }
+        });
+    </script>
+
 </body>
 
 </html>
