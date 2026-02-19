@@ -556,8 +556,6 @@ a {
     }
 
     /* 2. Carrusel Principal (Hero) */
-    /* Lo mantenemos como carrusel porque es tu estructura principal, 
-       pero ajustamos textos para que no se corten */
     .seccion-carrusel {
         max-height: 450px;
     }

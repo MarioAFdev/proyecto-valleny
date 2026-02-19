@@ -275,6 +275,17 @@
     cursor: pointer;
     transition: all 0.3s ease;
 }
+.boton-pedir {
+    padding: 12px 24px;
+    border-radius: 25px;
+    border: none;
+    background: linear-gradient(90deg, hsl(330, 80%, 66%) 20%, hsl(47, 100%, 50%) 100%);
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
 
 .nota {
     color: #FFF;
@@ -419,7 +430,6 @@
     .seccion-cocteles-info,
     .seccion-cocteles-info:nth-child(odd) {
         flex-direction: column;
-        /* Apilamos imagen y texto */
         text-align: center;
         gap: 20px;
     }
@@ -431,7 +441,6 @@
     .coctel-fondo {
         padding: 40px 20px;
         min-height: auto;
-        /* Dejamos que el contenido dicte la altura */
     }
 
     .contenido-coctel {
@@ -457,7 +466,6 @@
         padding: 20px;
     }
 
-    /* Carrusel de Favoritos */
     .card {
         flex-direction: column;
         text-align: center;
@@ -478,14 +486,12 @@
         margin-top: 0;
     }
 
-    /* Botones de selección de cóctel ideal */
     .botones-preguntas {
         gap: 10px;
     }
 
     .boton {
         width: 45%;
-        /* Dos botones por fila en móvil */
         height: auto;
         aspect-ratio: 1 / 1;
     }

@@ -181,7 +181,6 @@
     padding: 25px;
     display: flex;
     align-items: center;
-    /* Centrado vertical del icono y texto */
     color: #fff;
     flex-grow: 1;
 }
