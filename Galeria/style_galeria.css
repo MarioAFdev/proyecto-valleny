@@ -233,6 +233,14 @@
 
 /* --- RESPONSIVE HOME (MÓVIL - DISEÑO VERTICAL) --- */
 @media (max-width: 768px) {
+    .titular {
+        font-size: 32px;
+    }
+
+    .descripcion {
+        font-size: 14px;
+        padding: 0 20px;
+    }
 
     .logo.active {
         font-size: 36px;
@@ -294,6 +302,7 @@
     }
 
     /* Subrayado terrorista poniendo un elemento por debajo */
+    
     .seccion-galeria .titulo::after {
         content: "";
         position: absolute;
