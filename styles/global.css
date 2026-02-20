@@ -435,7 +435,7 @@ body {
 
 .skip-link:focus {
   /* Mostrar al recibir foco */
-  clip: auto;
+  clip-path: none;
   overflow: visible;
   outline: 2px solid #fff; /* Añadir outline para accesibilidad */
 }

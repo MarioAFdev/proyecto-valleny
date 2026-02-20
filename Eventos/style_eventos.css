@@ -23,7 +23,7 @@ h2 {
     height: 320px;
     background-image: url(../images/imagenes-eventos/hero-image.jpg);
     background-size: cover;
-    background-position: center
+    background-position: center;
 }
 
 .hero .overlay {
@@ -115,9 +115,8 @@ h2 {
 
 .event:hover {
     border-color: #ee62a9;
-    transform: translateY(-8px);
     transform: scale(1.05);
-    box-shadow: 0 15px 40px rgba(238, 98, 169, 0.2);
+    box-shadow: 0 15px 40px hsla(330, 80%, 66%, 0.2);
     transition: all 0.3s ease;
 }
 
